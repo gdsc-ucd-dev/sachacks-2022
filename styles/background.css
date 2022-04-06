@@ -1,0 +1,72 @@
+#home-bottom, #home-top {
+    /* put common propeties */
+}
+
+/* home-top container mobile */
+#home-top {
+  z-index: 0;
+  position: relative;
+
+  background-image: linear-gradient(
+      to bottom left,
+      #bbe4fcc7,
+      #bbe4fc11,
+      #cae7ed46,
+      #fff0b963,
+      #fff0b980,
+      #fff0b963,
+      #cae7ed46,
+      #bbe4fc11,
+      #bbe4fcc7
+    ),
+    url("../src/img/sachacks_landing_bg_1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home-bottom container mobile */
+#home-bottom {
+  z-index: 0;
+  position: relative;
+
+  background-image: linear-gradient(
+      to bottom left,
+      #bbe4fcc7,
+      #bbe4fc11,
+      #cae7ed46,
+      #fff0b963,
+      #fff0b980,
+      #fff0b963,
+      #cae7ed46,
+      #bbe4fc11,
+      #bbe4fcc7
+    ),
+    url("../src/img/sachacks_landing_bg_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home-top container tablet */
+@media screen and (min-width: 768px) {
+  #home-top {
+    background-position: top;
+  }
+}
+/* home-bottom container tablet */
+@media screen and (min-width: 768px) {
+  #home-bottom {
+    background-position: top;
+  }
+}

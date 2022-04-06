@@ -1,0 +1,15 @@
+/* font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* tailwindCSS rules */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font.css */
+@import url("./font.css");
+
+/* add scroll smooth for all browser configurations */
+
+/* containers with backgroundImage */
+@import url("./background.css");
