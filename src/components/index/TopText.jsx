@@ -1,8 +1,10 @@
-export default function TopText () {
-    return (
-      <section className="relative w-full">
-                <div id="home-text" className="py-16 max-w-6xl mx-auto px-8 min-h-screen flex flex-col justify-center items-start w-full">
-        <section className="w-full flex flex-col justify-center items-start gap-4">
+/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image';
+export default function TopText() {
+  return (
+    <section className="relative w-full">
+      <div className="py-16 relative mx-auto px-8 min-h-screen flex flex-col justify-center items-start w-full">
+        <section className="w-full max-w-6xl mx-auto relative z-30 flex flex-col justify-center items-start gap-4">
           <h2 className="text-4xl font-bold">SacHacks 2022</h2>
           <h4 className="text-2xl font-semibold">Design. Code. Launch.</h4>
           <p className="w-full max-w-md my-4 font-semibold text-lg leading-loose">
@@ -21,6 +23,6 @@ export default function TopText () {
           </div>
         </section>
       </div>
-      </section>
-    )
+    </section>
+  );
 }
