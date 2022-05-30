@@ -29,7 +29,7 @@ export default function Layout({ children }) {
   return (
     <div
       id="layout"
-      className="w-full text-mainColor font-poppins bg-transparent relative flex flex-col justify-start items-center min-h-screen"
+      className="w-full text-mainColor  font-poppins bg-transparent relative flex flex-col justify-start items-center min-h-screen"
     >
       <Head>
         <title>SacHack | Welcome</title>

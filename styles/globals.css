@@ -9,7 +9,10 @@
 /* font.css */
 @import url("./font.css");
 
-/* add scroll smooth for all browser configurations */
-
 /* containers with backgroundImage */
 @import url("./background.css");
+
+/* add scroll smooth for all browser configurations */
+* {
+    scroll-behavior: smooth;
+}

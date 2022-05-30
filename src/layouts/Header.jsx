@@ -3,9 +3,10 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CgMenuGridR } from 'react-icons/cg';
+import HeaderLink from '../components/index/reusable/HeaderLink';
+import Logo from '../components/index/reusable/Logo';
+import { pageLinks } from '../data';
 // const Route = dynamic(() => import("../reusable/Route"));
-
-import LogoImage from '../img/smaller-2.png';
 
 const Popup = dynamic(() => import('../design/Popup'));
 const Modal = dynamic(() => import('../layouts/Modal'));
@@ -27,31 +28,14 @@ export default function Header({ scroller }) {
         }
       >
         <div className="w-auto flex items-center gap-2">
-          <h1 className="font-bold pl-8 xl:pl-0">
-            <Link href={'/'}>
-              <a>
-                <img
-                  className="w-40 bg-slate-900/90 rounded-full px-3 py-2"
-                  src={LogoImage.src}
-                  alt="SacHacks 2022 Logo Image"
-                />
-              </a>
-            </Link>
-          </h1>
+          <Logo />
         </div>
 
         {/* desktop version navigation */}
         <nav className="hidden md:flex jusitfy-center items-center gap-4 flex-wrap">
-          {/* <Route href={"#home-text"} text={"Home"} className={"text-slate-800 font-semibold"} />
-          <Route href={"#home-cards"} text={"About"} className={"text-slate-800 font-semibold"} />
-          <Route href={"#home-events"} text={"Events"} className={"text-slate-800 font-semibold"} />
-          <Route href={"#home-faq"} text={"FAQ"} className={"text-slate-800 font-semibold"} />
-          <Route href={"#"} text={"Sponsors"} className={"text-slate-800 font-semibold"} /> */}
-          <a href="#home-text">Home</a>
-          <a href="#home-cards">About</a>
-          <a href="#home-events">Events</a>
-          <a href="#home-faq">FAQ</a>
-          <a href="#">Sponsors</a>
+          {pageLinks.map((link, index) => (
+            <HeaderLink key={index} {...link} />
+          ))}
         </nav>
 
         {/* mobile version navigation */}
@@ -69,7 +53,7 @@ export default function Header({ scroller }) {
           className={
             scroller
               ? 'hidden transition-all fixed -top-48 right-8 rounded-b-lg shadow-lg'
-              : 'flex flex-col md:hidden items-center transition-all fixed top-0 right-8'
+              : 'flex flex-col items-center transition-all fixed top-0 right-8'
           }
           href="https://mlh.io/"
         >
