@@ -10,10 +10,10 @@ export default function TopText() {
         <section className="w-full mx-auto relative z-30 flex flex-col justify-center items-center space-y-8">
           <div className="flex flex-col justify-center items-center">
             <h2 className="text-2xl md:text-5xl xl:text-6xl font-bold w-full text-left md:text-center">
-              SacHacks 2022
+              SacHacks IV
             </h2>
             <p className="mb-4 font-semibold text-lg lg:text-xl xl:text-2xl text-left md:text-center w-full">
-              SacHacks IV
+              October 15-16, 2022
             </p>
             <h4 className="text-2xl md:text-3xl lg:text-4xl font-semibold mt-8">
               Design. Code. Launch.
@@ -25,7 +25,7 @@ export default function TopText() {
               <span className="font-bold">GDSC @ UCD</span>
             </div>
             <p className="text-xl font-bold px-5 py-3 bg-slate-800 text-slate-50 rounded-3xl text-center w-full">
-              Join us in-person or Virtually on October 15-16.
+              Join us Virtually.
             </p>
           </div>
 
@@ -37,10 +37,10 @@ export default function TopText() {
           </p>
           <div className="flex items-center justify-center w-full space-x-4">
             <a
-              href="https://bit.ly/joinsachacks"
+              href="https://forms.gle/ZpSfXsWReK1UEHPe9"
               className="py-2 px-4 bg-gray-100 shadow-lg rounded-lg text-lg font-semibold transition-all hover hover:bg-white/90 hover:shadow-xl hover:shadow-black/10"
             >
-              Join Team
+              Pre-Register
             </a>
             <a
               href="mailto:contact@sachacks.io"

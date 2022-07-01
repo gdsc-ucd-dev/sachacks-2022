@@ -53,7 +53,7 @@ export default function Footer() {
             />
           </ul>
           <Route
-            href={'/'}
+            href={'https://static.mlh.io/docs/mlh-code-of-conduct.pdf'}
             text={'MLH Code of Conduct'}
             className={' font-semibold text-center'}
           />
