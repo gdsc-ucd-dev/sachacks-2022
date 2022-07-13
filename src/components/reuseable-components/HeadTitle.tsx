@@ -1,4 +1,7 @@
+/**components */
 import AppTexts from "@/data/texts";
+
+/**next&react */
 import Link from "next/link";
 
 const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {

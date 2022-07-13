@@ -1,5 +1,10 @@
+/**data */
 import routes from "@/data/routes";
+
+/**utility functions */
 import join from "@/utils/join";
+
+/**next&react */
 import React, { useState } from "react";
 
 const MobileNav: React.FC = () => {

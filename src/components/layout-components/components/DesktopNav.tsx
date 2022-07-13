@@ -1,3 +1,4 @@
+/**data */
 import routes from "@/data/routes";
 
 const DesktopNav: React.FC = () => {

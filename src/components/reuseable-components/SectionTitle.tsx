@@ -1,3 +1,4 @@
+/**utility functions */
 import join from "@/utils/join";
 
 const SectionTitle: SectionTitleComponent = ({ title, color }) => {

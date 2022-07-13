@@ -1,15 +1,23 @@
-import Airplane from "@/components/events-components/Airplane";
-import FAQ from "@/components/faq-components/FAQ";
+/**components */
 import PageSection from "@/components/reuseable-components/PageSection";
 import PageWrapper from "@/components/reuseable-components/PageWrapper";
 import SectionTitle from "@/components/reuseable-components/SectionTitle";
+import Airplane from "@/components/events-components/Airplane";
 import SEO from "@/components/reuseable-components/SEO";
 import Card from "@/components/values-components/Card";
+import FAQ from "@/components/faq-components/FAQ";
+
+/**data */
 import FAQItems from "@/data/faqs";
 import AppTexts from "@/data/texts";
+
+/**next&react */
 import type { NextPage } from "next";
 import React from "react";
+
+/**react-icons */
 import { BsDiscord } from "react-icons/bs";
+
 const Home: NextPage = () => {
   return (
     <React.Fragment key="index">

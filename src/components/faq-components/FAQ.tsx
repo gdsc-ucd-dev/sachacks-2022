@@ -1,6 +1,11 @@
-import join from "@/utils/join";
+/**react&next */
 import { useState } from "react";
+
+/**react-icons */
 import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
+
+/**utility functions */
+import join from "@/utils/join";
 
 const FAQ: FAQComponent = ({ Q, A, links }) => {
   const [answerView, setAnswerView] = useState<boolean>(false);

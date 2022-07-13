@@ -1,6 +1,12 @@
+/**components */
 import HeadTitle from "../reuseable-components/HeadTitle";
+
+/**react-icons */
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+
+/**next&react */
 import React from "react";
+
 const Footer: React.FC = () => {
   return (
     <React.Fragment>
