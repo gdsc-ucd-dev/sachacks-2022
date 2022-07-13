@@ -1,34 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">SacHacks 2022 Landing Applcation</h1>
 
-## Getting Started
+<p align="center">
+    SacHacks 2022 landing web application built with <strong>NextJS, TypeScript, and TailwindCSS</strong> as took-kits along with developmental tools such as 
+    <strong>Git, Github, Yarn, Husky(*NOTYET?), and Link-staged(*NOTYET?)</strong>
+</p>
 
-First, run the development server:
+### Original Development By
 
-```bash
+<ul>
+    <li>
+        <a href="https://github.com/haneulab">Haneul Choi</a>
+    </li>
+        <li>
+        <a href="#">Mukta</a>
+    </li>
+</ul>
+
+### Technical Guidelines
+
+From the root directory, please comprehend the following guidelines, to make modifications or redesigning processes.
+
+For using proper `types` is required in this application, any `type` related content should have been declared within `src/<dirname>.d.ts` with keyword `declare type ...`. If you need to modify (add, remove, update) such contents, it is recommended that you first statically declare them in `src/<dirname>.d.ts` that the file you modify lives in.
+
+- **`pages`** : The files here match the route that the application will be presented in production. For example `pages/index.tsx` mirrors the `https://example.com/` route whereas `pages/api/someEndPoint.ts` mirrors the **API** end-point of at `https://example.com/api/someEndPoint`. Any route that is not within `pages/api` directory should be user interface routes corresponding its filename in production. _In our application as for 2022, we did not have any api end-point necessary. So there is no `pages/api` defined._
+
+- **`src`** : The `src` directory contains all the necessary `react` and `typescript` utilities for the applications such as `components`, `data`, and `utils`.
+  - **`src/components`** : component gateway directory that contains React component types & React components. Please make sure that you keep the fileanme made here end with `.tsx` extension and NOT `.ts`. This will cause syntactic error caught by both `eslint` and configurations seed on `tsconfig.json` file in the root directory.
+  - **`src/data`** : is gateway for static data used throughout the application such as routes, links, and displayable text contents. -**`src/utils`** : is where the utility functions for react components live in. Please refer to their declaration files in order to fully know their usage. `src/utils/utils.d.ts`
+
+#### Start Development Server
+
+Depending on the package type you use `yarn` or `npm`, run the following command to start development server on your local machine (after you properly clone & install them)
+
+```shell
+# in the root directory
 npm run dev
-# or
+# or using yarn
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Preview Production Server
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+You can also view the production server by running the following command
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```shell
+npm start
+# or using yarn
+yarn start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Build Process
 
-## Learn More
+After the modifications & updates made, you can build the project by running the following
 
-To learn more about Next.js, take a look at the following resources:
+```shell
+npm run build
+# or using yarn
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### In Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This application in production uses a bundled static JavaScript file built within `./.next` directory which is not published in the Github repository. You need an invitation to this repository in order for you to copy exact bundles, but you can always clone & rebuild using `git clone ...` -> `cd ./<repo-name>` -> `yarn install` or `npm install` -> `yarn build` or `npm run build`.
 
-## Deploy on Vercel
+It is currently hosted in [Vercel](https://vercel.com). If you are going to continue using React based framework like NextJs, I recommend that you stick with host organizations like `Vercel` or `Netlify` for your front-end application as it is free, fast, and automatic deployable using CLIs at build time.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The original domain access is not on us. We are just using their name-server. Thus you should contact the original domain purchaser for neccessary cases.

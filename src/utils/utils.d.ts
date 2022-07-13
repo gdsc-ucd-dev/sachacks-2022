@@ -1,7 +1,6 @@
 /**
  * utiltity functions type declarations here
  */
-declare module "";
 
 /**
  * Use this helper function to conditionally apply classNames to react components

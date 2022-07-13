@@ -1,3 +1,4 @@
+import Airplane from "@/components/events-components/Airplane";
 import FAQ from "@/components/faq-components/FAQ";
 import PageSection from "@/components/reuseable-components/PageSection";
 import PageWrapper from "@/components/reuseable-components/PageWrapper";
@@ -39,13 +40,13 @@ const Home: NextPage = () => {
                 <strong>GDSC @ UCD</strong>
               </p>
             </div>
-            <div className="mb-4 lg:mb-6">
+            <div className="mb-8 lg:mb-12">
               <button className="px-5 py-3 rounded-full bg-highlight/90 text-light font-medium text-sm">
                 Join Us Virtually
               </button>
             </div>
-            <div className="mb-6">
-              <p className="font-normal text-sm leading-6 lg:text-base lg:leading-7 2xl:text-lg 2xl:leading-8 mb-3">
+            <div>
+              <p className="font-normal text-sm leading-6 lg:text-base lg:leading-7 2xl:text-lg 2xl:leading-8 mb-6">
                 SacHacks is the first major intercollegiate hackathon in the
                 Sacramento, California area. Our passion is to cultivate the
                 untapped potential of those in Sac and beyond by launching their
@@ -128,11 +129,14 @@ const Home: NextPage = () => {
       </PageSection>
       <PageSection
         id="index-events"
-        className="min-h-screen w-full flex flex-col justify-center bg-gradient-to-b from-highlight/10 to-sky-300/50"
+        className="w-full flex flex-col justify-center bg-gradient-to-b from-highlight/10 to-sky-300/50"
       >
-        <PageWrapper className="w-full px-8 py-28 max-w-6xl mx-auto grid grid-cols-1">
+        <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1">
           <>
-            <SectionTitle title="Featured Events" color="light" />
+            <SectionTitle title="Featured Events" color="dark" />
+            <div className="mt-16 animate-pulse">
+              <Airplane />
+            </div>
           </>
         </PageWrapper>
       </PageSection>
@@ -140,7 +144,7 @@ const Home: NextPage = () => {
         id="index-FAQ"
         className="min-h-screen w-full flex flex-col justify-center bg-gradient-to-b from-sky-300/50 to-sky-200"
       >
-        <PageWrapper className="p-8 lg:p-16 w-full max-w-6xl mx-auto bg-sky-200/50 backdrop-blur-md grid grid-cols-1">
+        <PageWrapper className="p-8 lg:p-16 w-full max-w-6xl mx-auto bg-sky-200/70 backdrop-blur-sm shadow-xl rounded-xl grid grid-cols-1">
           <>
             <SectionTitle title="FAQ" color="dark" />
             <ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16  ">

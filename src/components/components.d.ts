@@ -1,7 +1,6 @@
 /**
  * component type declarations here
  */
-declare module "";
 
 /**
  * LAYOUT COMPONENT
