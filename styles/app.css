@@ -1,0 +1,15 @@
+/**
+* APP FONT IMPORTS 
+* Source : Google Font APIs
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/** Set base font to 'Poppins', sans-serif */
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/** Set Scrollable element to have no visual scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}

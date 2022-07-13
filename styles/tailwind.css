@@ -1,0 +1,8 @@
+/**
+* TailwindCSS Kit Imports
+* Need All of the Utiliteis, Components and Base Imports
+* Do Not Remove These Imports UNLESS Change of Framework
+*/
+@tailwind base;
+@tailwind utilities;
+@tailwind components;

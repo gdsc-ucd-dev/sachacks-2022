@@ -1,0 +1,157 @@
+import FAQ from "@/components/faq-components/FAQ";
+import PageSection from "@/components/reuseable-components/PageSection";
+import PageWrapper from "@/components/reuseable-components/PageWrapper";
+import SectionTitle from "@/components/reuseable-components/SectionTitle";
+import SEO from "@/components/reuseable-components/SEO";
+import Card from "@/components/values-components/Card";
+import FAQItems from "@/data/faqs";
+import AppTexts from "@/data/texts";
+import type { NextPage } from "next";
+import React from "react";
+import { BsDiscord } from "react-icons/bs";
+const Home: NextPage = () => {
+  return (
+    <React.Fragment key="index">
+      {/* PAGE SEO */}
+      <SEO />
+
+      {/* PAGE UI */}
+      <PageSection
+        id="index-hero"
+        className="w-full h-screen flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300"
+      >
+        <PageWrapper className="w-full px-8 max-w-6xl mx-auto py-28 grid grid-cols-1">
+          <>
+            <div className="mb-6">
+              <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
+                SacHacks IV
+              </h2>
+              <p className="text-base lg:text-lg 2xl:text-xl">
+                October 15-16, 2022
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3 className="font-semibold text-2xl lg:text-3xl 2xl:text-4xl mb-1">
+                {AppTexts.KEYWORDS.join(", ")}
+              </h3>
+              <p className="lg:text-lg">
+                Co-hosted by <strong>IBM</strong> and{" "}
+                <strong>GDSC @ UCD</strong>
+              </p>
+            </div>
+            <div className="mb-4 lg:mb-6">
+              <button className="px-5 py-3 rounded-full bg-highlight/90 text-light font-medium text-sm">
+                Join Us Virtually
+              </button>
+            </div>
+            <div className="mb-6">
+              <p className="font-normal text-sm leading-6 lg:text-base lg:leading-7 2xl:text-lg 2xl:leading-8 mb-3">
+                SacHacks is the first major intercollegiate hackathon in the
+                Sacramento, California area. Our passion is to cultivate the
+                untapped potential of those in Sac and beyond by launching their
+                ideas into action during a 24-hour hackathon.
+              </p>
+              <ul className="flex items-center justify-start space-x-2 md:space-x-4 mb-8">
+                <button className="shadow-xl bg-light text-highlight px-8 py-3 rounded-full font-semibold text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm">
+                  Pre Register
+                </button>
+                <button className="shadow-xl bg-highlight text-light px-8 py-3 rounded-full font-semibold text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm">
+                  Sponsor Us
+                </button>
+              </ul>
+              <div>
+                <a
+                  href="https://discord.com/invite/cWjFh4XxyZ"
+                  className="flex space-x-2 items-center text-lg font-semibold  justify-center transition-all lg:hover:text-blue-500"
+                >
+                  <span>Discord</span>
+                  <BsDiscord className="text-xl" />
+                </a>
+              </div>
+            </div>
+          </>
+        </PageWrapper>
+      </PageSection>
+      <PageSection
+        id="index-values"
+        className="min-h-screen w-full flex flex-col justify-center bg-gradient-to-b from-sky-300 to-highlight/10"
+      >
+        <PageWrapper className="w-full px-8 max-w-6xl mx-auto py-28 grid grid-cols-1">
+          <>
+            <SectionTitle title="Our Values" color="dark" />
+            <ul className="w-full h-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
+              <div className="relative w-full h-full flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/75 to-sky-300/75">
+                <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
+                  <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
+                    Design
+                  </h4>
+                </article>
+                <Card.design />
+                <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
+                  <p className="text-center text-lg">
+                    Create something great, unique, and innovative. Bring your
+                    ideas to life.
+                  </p>
+                </div>
+              </div>
+              <div className="relative w-full h-full flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/75 to-sky-300/75">
+                <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
+                  <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
+                    Code
+                  </h4>
+                </article>
+                <Card.code />
+                <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
+                  <p className="text-center text-lg">
+                    Something groundbreaking. Build your idea to make the World
+                    better.
+                  </p>
+                </div>
+              </div>{" "}
+              <div className="relative w-full h-full flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/75 to-sky-300/75">
+                <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
+                  <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
+                    Launch
+                  </h4>
+                </article>
+                <Card.launch />
+                <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
+                  <p className="text-center text-lg">
+                    Something big. Pitch your ideas to our panel of judges who
+                    are the best in their field.
+                  </p>
+                </div>
+              </div>
+            </ul>
+          </>
+        </PageWrapper>
+      </PageSection>
+      <PageSection
+        id="index-events"
+        className="min-h-screen w-full flex flex-col justify-center bg-gradient-to-b from-highlight/10 to-sky-300/50"
+      >
+        <PageWrapper className="w-full px-8 py-28 max-w-6xl mx-auto grid grid-cols-1">
+          <>
+            <SectionTitle title="Featured Events" color="light" />
+          </>
+        </PageWrapper>
+      </PageSection>
+      <PageSection
+        id="index-FAQ"
+        className="min-h-screen w-full flex flex-col justify-center bg-gradient-to-b from-sky-300/50 to-sky-200"
+      >
+        <PageWrapper className="p-8 lg:p-16 w-full max-w-6xl mx-auto bg-sky-200/50 backdrop-blur-md grid grid-cols-1">
+          <>
+            <SectionTitle title="FAQ" color="dark" />
+            <ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16  ">
+              {FAQItems.map((faq, index) => (
+                <FAQ {...faq} key={index} />
+              ))}
+            </ul>
+          </>
+        </PageWrapper>
+      </PageSection>
+    </React.Fragment>
+  );
+};
+export default Home;
