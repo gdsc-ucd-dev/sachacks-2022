@@ -9,7 +9,7 @@ const DesktopNav: React.FC = () => {
           <a
             key={index}
             href={route.href}
-            className="transition-all hover:opacity-50"
+            className="transition-all hover:opacity-50 capitalize"
           >
             {route.displayAs}
           </a>

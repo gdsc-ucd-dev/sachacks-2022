@@ -11,18 +11,13 @@ const FAQItems: FAQs = [
   },
   {
     Q: "Where will the event take place?",
-    A: "The event will take a hybrid format–so even if you can’t make it to the greater Sacramento area–you can still compete in the Hackathon. The in-person venue is being decided.",
+    A: "The event will take a virtual format–so even if you can’t make it to the greater Sacramento area–you can still compete in the Hackathon. The in-person venue is being decided.",
     links: null,
   },
 
   {
     Q: "How does COVID-19 affect SacHacks?",
-    A: "Our team is closely monitoring the pandemic and will keep the safety and health of our participants as our main priority. With that in mind, we have decided to make SacHacks IV an hybrid event and we will follow the latest guidelines from CDC to provide a safe environment to our in-person competitors.",
-    links: null,
-  },
-  {
-    Q: "How does COVID-19 affect SacHacks?",
-    A: "Our team is closely monitoring the pandemic and will keep the safety and health of our participants as our main priority. With that in mind, we have decided to make SacHacks IV an hybrid event and we will follow the latest guidelines from CDC to provide a safe environment to our in-person competitors.",
+    A: "Our team is closely monitoring the pandemic and will keep the safety and health of our participants as our main priority. With that in mind, we have decided to make SacHacks IV a virtual event and we will follow the latest guidelines from CDC to provide a safe environment to our in-person competitors.",
     links: null,
   },
   {
