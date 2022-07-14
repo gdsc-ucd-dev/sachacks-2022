@@ -459,7 +459,7 @@ const Footer: React.FC = () => {
             </linearGradient>
           </defs>
         </svg>
-        <section className="relative z-0 px-4 lg:px-8 max-w-7xl mx-auto py-16 grid grid-cols-1 lg:grid-cols-10 gap-8 place-items-start">
+        <section className="relative z-0 px-8 max-w-7xl mx-auto py-16 grid grid-cols-1 lg:grid-cols-10 gap-8 place-items-start">
           <div className="w-full flex flex-col items-center lg:items-start lg:col-span-2">
             <HeadTitle mountedIn="footer" />
           </div>

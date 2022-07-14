@@ -1,7 +1,15 @@
-const MLHPopUp: React.FC = () => {
+import join from "@/utils/join";
+
+interface MLHPopUpProps {
+  scroll: boolean;
+}
+const MLHPopUp: React.FC<MLHPopUpProps> = ({ scroll }) => {
   return (
     <svg
-      className="fixed z-50 top-0 right-16"
+      className={join(
+        "transition-all fixed z-50 top-0 right-16 transform",
+        scroll ? "-translate-y-full" : "translate-y-0"
+      )}
       width="87"
       height="150"
       viewBox="0 0 87 150"

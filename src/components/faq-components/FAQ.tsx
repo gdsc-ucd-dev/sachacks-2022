@@ -17,7 +17,7 @@ const FAQ: FAQComponent = ({ Q, A, links }) => {
       <h3
         onClick={onClickAnswerView}
         className={join(
-          "transition-all flex justify-between items-center ease-in-out cursor-pointer",
+          "transition-all flex justify-between items-center ease-in-out cursor-pointer lg:hover:opacity-50 lg:hover:px-2",
           answerView ? "font-semibold" : "font-normal"
         )}
       >
