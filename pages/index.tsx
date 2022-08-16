@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-          </>
+            </>
         </PageWrapper>
       </PageSection>
 

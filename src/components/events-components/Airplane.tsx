@@ -1,6 +1,6 @@
 const Airplane: React.FC = () => {
   return (
-    <svg
+    <svg className="w-full"
       width="1168"
       height="262"
       viewBox="0 0 1168 262"
