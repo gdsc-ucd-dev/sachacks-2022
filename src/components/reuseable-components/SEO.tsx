@@ -8,7 +8,7 @@ const SEO: React.FC = () => {
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       {/* APP TITLE */}
-      <title>Welcome to SacHack 2022 | Design, Code, and Launch</title>
+      <title>Welcome to SacHack IV | Design, Code, and Launch</title>
     </Head>
   );
 };

@@ -7,6 +7,7 @@ import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 /**next&react */
 import React from "react";
 
+import links from "@/data/links";
 const Footer: React.FC = () => {
   return (
     <React.Fragment>
@@ -485,33 +486,33 @@ const Footer: React.FC = () => {
           <div className="capitalize lg:col-span-2">
             <h5 className="mb-3">Join Us</h5>
             <ul className="text-sm pl-4 flex flex-col items-start space-y-1 mb-3 border-l-2 border-highlight">
+              {/* <li>
+                <a href="">Mentors</a>
+              </li> */}
               <li>
-                <a>Mentors</a>
+                <a href={links.preRegister} target="_blank" rel="noreferrer">Hackers</a>
               </li>
               <li>
-                <a>Hackers</a>
-              </li>
-              <li>
-                <a>Sponsor Us</a>
+                <a href={links.sponsorUs}>Sponsor Us</a>
               </li>
             </ul>
-            <a href="">MLH CODE OF CONDUCT</a>
+            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">MLH CODE OF CONDUCT</a>
           </div>
           <div className="w-full flex flex-col items-center lg:items-start lg:col-span-4">
             <h6 className="text-center mb-2">Follow us on social media</h6>
-            <ul className="flex justify-start space-x-4">
-              <li>
-                <a href="" data-link="facebook">
-                  <BsFacebook />
+            <ul className="flex justify-start space-x-4">    
+              <li> 
+              <a href="https://www.facebook.com/sachacks/" target="_blank" rel="noreferrer">
+                <BsFacebook />
                 </a>
-              </li>
+              </li>        
               <li>
-                <a href="" data-link="instagram">
+                <a href="https://www.instagram.com/sachacks/" target="_blank" rel="noreferrer" data-link="instagram">
                   <BsInstagram />
                 </a>
               </li>
               <li>
-                <a href="" data-link="twitter">
+                <a href="#" target="_blank" rel="noreferrer" data-link="twitter">
                   <BsTwitter />
                 </a>
               </li>

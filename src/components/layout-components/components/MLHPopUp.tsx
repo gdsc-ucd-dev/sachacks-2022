@@ -5,7 +5,8 @@ interface MLHPopUpProps {
 }
 const MLHPopUp: React.FC<MLHPopUpProps> = ({ scroll }) => {
   return (
-    <svg
+    <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">
+      <svg
       className={join(
         "transition-all fixed z-50 top-0 right-16 transform",
         scroll ? "-translate-y-full" : "translate-y-0"
@@ -38,6 +39,7 @@ const MLHPopUp: React.FC<MLHPopUpProps> = ({ scroll }) => {
         />
       </defs>
     </svg>
+    </a>
   );
 };
 export default MLHPopUp;

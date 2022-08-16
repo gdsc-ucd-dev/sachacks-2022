@@ -15,7 +15,7 @@ const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
             alt=""
             className="relative top-4 transform "
           /> */}
-          <a className="flex flex-col items-center">
+          <a className="flex flex-col items-center" href="#index-hero">
             <span>{AppTexts.TITLE}</span>
             {mountedIn === "footer" && (
               <span className="font-thin text-sm">

@@ -19,6 +19,9 @@ import React from "react";
 /**react-icons */
 import { BsDiscord } from "react-icons/bs";
 
+/**images */
+import myBg from "public/assets/Home Page Illustration.svg";
+
 const Home: NextPage = () => {
   return (
     <React.Fragment key="index">
@@ -32,7 +35,7 @@ const Home: NextPage = () => {
       >
         <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1">
           <>
-            <div className="mb-6">
+            <div className="mb-6"> 
               <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
                 SacHacks IV
               </h2>
@@ -59,6 +62,8 @@ const Home: NextPage = () => {
               <ul className="flex items-center justify-start space-x-2 md:space-x-4 mb-8">
                 <a
                   href={links.preRegister}
+                  target="_blank"
+                  rel="noreferrer"
                   className="shadow-xl bg-light text-highlight px-8 py-3 rounded-full text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                 >
                   Pre-register
@@ -83,6 +88,7 @@ const Home: NextPage = () => {
           </>
         </PageWrapper>
       </PageSection>
+
       <PageSection
         id="index-values"
         className="w-full flex flex-col justify-center bg-gradient-to-b from-sky-300 to-highlight/10"
@@ -162,6 +168,19 @@ const Home: NextPage = () => {
                 <FAQ {...faq} key={index} />
               ))}
             </ul>
+          </>
+        </PageWrapper>
+      </PageSection>
+      <PageSection
+        id="index-sponsors"
+        className="w-full flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300/50"
+      >
+        <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1">
+          <>
+            <SectionTitle title="Sponsors" color="dark" />
+            <div className="mt-16 animate-pulse">
+              <Airplane />
+            </div>
           </>
         </PageWrapper>
       </PageSection>
