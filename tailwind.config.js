@@ -12,6 +12,7 @@ module.exports = {
         light: "#EEEEEE",
         highlight: "#053A43",
       },
+    
     },
   },
   plugins: [],

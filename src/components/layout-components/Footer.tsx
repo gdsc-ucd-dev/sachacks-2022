@@ -11,11 +11,11 @@ import links from "@/data/links";
 const Footer: React.FC = () => {
   return (
     <React.Fragment>
-      <div className="w-full hidden lg:block -right-[37.5%] relative top-56 -mt-40 z-20">
+      {/* <div className=" hidden lg:block -right-[37.5%] relative top-56 -mt-40 z-20">
         <svg
-          width="234"
+          width="110"
           height="403"
-          viewBox="0 0 234 403"
+          viewBox="0 0 110 403"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="w-1/4 md:w-full"
@@ -432,13 +432,13 @@ const Footer: React.FC = () => {
             </clipPath>
           </defs>
         </svg>
-      </div>
+      </div> */}
       <footer className="w-full bg-sky-100 relative">
         <svg
           className="absolute lg:z-10 bottom-0 right-0"
           width="574"
-          height="224"
-          viewBox="0 0 574 224"
+          height="150"
+          viewBox="0 0 574 150"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -464,7 +464,7 @@ const Footer: React.FC = () => {
           <div className="w-full flex flex-col items-center lg:items-start lg:col-span-2">
             <HeadTitle mountedIn="footer" />
           </div>
-          <div className="capitalize lg:col-span-2">
+          <div className="capitalize lg:col-span-2 relative">
             <ul className="text-sm flex flex-col space-y-1 items-start">
               <li>
                 <a href="#index-hero">Home</a>
@@ -483,9 +483,9 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="capitalize lg:col-span-2">
+          <div className="capitalize lg:col-span-2 relative">
             <h5 className="mb-3">Join Us</h5>
-            <ul className="text-sm pl-4 flex flex-col items-start space-y-1 mb-3 border-l-2 border-highlight">
+            <ul className="text-sm pl-4 flex flex-col items-start space-y-1 mb-3 border-l-2 border-highlight relative">
               {/* <li>
                 <a href="">Mentors</a>
               </li> */}
@@ -498,25 +498,32 @@ const Footer: React.FC = () => {
             </ul>
             <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">MLH CODE OF CONDUCT</a>
           </div>
-          <div className="w-full flex flex-col items-center lg:items-start lg:col-span-4">
-            <h6 className="text-center mb-2">Follow us on social media</h6>
+          <div className="w-full flex flex-col items-center lg:items-start lg:col-span-4 relative">
             <ul className="flex justify-start space-x-4">    
               <li> 
+              <div className="row">
               <a href="https://www.facebook.com/sachacks/" target="_blank" rel="noreferrer">
                 <BsFacebook />
                 </a>
+                </div>
               </li>        
               <li>
+              <div className="row">
                 <a href="https://www.instagram.com/sachacks/" target="_blank" rel="noreferrer" data-link="instagram">
                   <BsInstagram />
                 </a>
+                </div>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noreferrer" data-link="twitter">
+              <div className="row">
+                <a href="https://twitter.com/sachacks?lang=en" target="_blank" rel="noreferrer" data-link="twitter">
                   <BsTwitter />
                 </a>
+                </div>
               </li>
             </ul>
+
+             <h6 className="text-center mb-2">Follow us</h6>
           </div>
         </section>
       </footer>

@@ -29,9 +29,10 @@ const Home: NextPage = () => {
       <SEO />
 
       {/* PAGE UI */}
+
       <PageSection
         id="index-hero"
-        className="w-full h-screen flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300"
+        className="w-full h-screen flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300  " 
       >
         <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1">
           <>
