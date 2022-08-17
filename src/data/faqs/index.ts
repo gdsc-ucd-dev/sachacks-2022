@@ -53,8 +53,8 @@ const FAQItems: FAQs = [
     links: null,
   },
   {
-    Q: "What is IBM-Z?",
-    A: "Come and learn about IBM Z - the enterprise computing platform that runs the world's economy. Design your solution for health, social inequality, or data science and launch it on IBM Z to realize and leverage the power of IBM Z.",
+    Q: "What is IBM zSystems?",
+    A: "Come and learn about IBM zSystems - the enterprise computing platform that runs the world's economy. Design your solution for health, social inequality, or data science and launch it on IBM Z to realize and leverage the power of IBM Z.",
     links: null,
   },
   {
