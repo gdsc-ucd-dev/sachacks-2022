@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         {/* <div className="md:block w-full overflow-hidden hidden absolute z-0 top-0 left-0 ">
           <Mountain />
         </div> */}
-       /* <TestMountain />*/
+        {/* <TestMountain /> */}
         <PageSection
           id="index-hero"
           className="relative z-20 w-full h-screen flex flex-col justify-center bg-transparent"
