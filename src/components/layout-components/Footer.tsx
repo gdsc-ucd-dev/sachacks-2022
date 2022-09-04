@@ -433,7 +433,7 @@ const Footer: React.FC = () => {
           </defs>
         </svg>
       </div> */}
-      <footer className="w-full bg-sky-100 relative">
+      <footer className="w-full bg-sky-100 relative z-10">
         <svg
           className="absolute lg:z-10 bottom-0 right-0"
           width="574"
@@ -490,40 +490,62 @@ const Footer: React.FC = () => {
                 <a href="">Mentors</a>
               </li> */}
               <li>
-                <a href={links.preRegister} target="_blank" rel="noreferrer">Hackers</a>
+                <a href={links.preRegister} target="_blank" rel="noreferrer">
+                  Hackers
+                </a>
               </li>
               <li>
                 <a href={links.sponsorUs}>Sponsor Us</a>
               </li>
             </ul>
-            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noreferrer">MLH CODE OF CONDUCT</a>
+            <a
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              MLH CODE OF CONDUCT
+            </a>
           </div>
           <div className="w-full flex flex-col items-center lg:items-start lg:col-span-4 relative">
-            <ul className="flex justify-start space-x-4">    
-              <li> 
-              <div className="row">
-              <a href="https://www.facebook.com/sachacks/" target="_blank" rel="noreferrer">
-                <BsFacebook />
-                </a>
-                </div>
-              </li>        
+            <ul className="flex justify-start space-x-4">
               <li>
-              <div className="row">
-                <a href="https://www.instagram.com/sachacks/" target="_blank" rel="noreferrer" data-link="instagram">
-                  <BsInstagram />
-                </a>
+                <div className="row">
+                  <a
+                    href="https://www.facebook.com/sachacks/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BsFacebook />
+                  </a>
                 </div>
               </li>
               <li>
-              <div className="row">
-                <a href="https://twitter.com/sachacks?lang=en" target="_blank" rel="noreferrer" data-link="twitter">
-                  <BsTwitter />
-                </a>
+                <div className="row">
+                  <a
+                    href="https://www.instagram.com/sachacks/"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-link="instagram"
+                  >
+                    <BsInstagram />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div className="row">
+                  <a
+                    href="https://twitter.com/sachacks?lang=en"
+                    target="_blank"
+                    rel="noreferrer"
+                    data-link="twitter"
+                  >
+                    <BsTwitter />
+                  </a>
                 </div>
               </li>
             </ul>
 
-             <h6 className="text-center mb-2">Follow us</h6>
+            <h6 className="text-center mb-2">Follow us</h6>
           </div>
         </section>
       </footer>

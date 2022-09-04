@@ -6,7 +6,7 @@ const Layout: LayoutComponent = ({ children }) => {
   return (
     <div id="layout" className="w-full relative overflow-hidden">
       <Header />
-      <main>{children}</main>
+      <main className="relative z-0">{children}</main>
       <Footer />
     </div>
   );

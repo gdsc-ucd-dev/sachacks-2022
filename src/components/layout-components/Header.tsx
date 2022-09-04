@@ -13,7 +13,6 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log("scroll!");
       if (document.body.scrollTop || document.documentElement.scrollTop > 150) {
         setScroll(true);
       } else {
