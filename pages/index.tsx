@@ -6,6 +6,7 @@ import Airplane from "@/components/events-components/Airplane";
 import SEO from "@/components/reuseable-components/SEO";
 import Card from "@/components/values-components/Card";
 import FAQ from "@/components/faq-components/FAQ";
+import Mountain from "@/components/background-components/Mountain";
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -21,6 +22,7 @@ import { BsDiscord } from "react-icons/bs";
 
 /**images */
 import myBg from "public/assets/Home Page Illustration.svg";
+import Bridge from "@/components/background-components/Bridge";
 
 const Home: NextPage = () => {
   return (
@@ -29,13 +31,16 @@ const Home: NextPage = () => {
       <SEO />
 
       {/* PAGE UI */}
-
+      <div className="relative">
+      {/* <span className="h-full w-screen absolute flex justify-center"><Mountain/></span> */}
+    
       <PageSection
         id="index-hero"
-        className="w-full h-screen flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300  " 
+        className="w-full h-screen flex flex-col justify-center bg-gradient-to-b from-sky-200 to-sky-300" 
       >
-        <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1">
-          <>
+        <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1 relative z-10">   
+          
+          <div className="relative">
             <div className="mb-6"> 
               <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
                 SacHacks IV
@@ -44,6 +49,7 @@ const Home: NextPage = () => {
                 Join Us Virtually On October 15-16, 2022
               </p>
             </div>
+            
             <div className="mb-6">
               <h3 className="font-semibold text-2xl lg:text-3xl 2xl:text-4xl mb-1">
                 {AppTexts.KEYWORDS.join(", ")}
@@ -86,18 +92,19 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            </>
-        </PageWrapper>
+          </div>
+          
+        </PageWrapper> 
       </PageSection>
-
+      
       <PageSection
         id="index-values"
         className="w-full flex flex-col justify-center bg-gradient-to-b from-sky-300 to-highlight/10"
       >
-        <PageWrapper className="w-full px-8 pt-28 pb-14 max-w-6xl mx-auto grid grid-cols-1">
+        <PageWrapper className="w-full px-8 pt-28 pb-14 max-w-6xl mx-auto grid grid-cols-1 relative z-10">
           <>
             <SectionTitle title="Our Values" color="dark" />
-            <ul className="w-full h-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
+            <ul className="w-full h-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 relative">
               <div className="relative w-full h-80 flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/75 to-sky-300/75">
                 <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
                   <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
@@ -141,20 +148,24 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </ul>
+            
           </>
+        
         </PageWrapper>
       </PageSection>
+      </div>
+
       <PageSection
         id="index-events"
         className="w-full flex flex-col justify-center bg-gradient-to-b from-highlight/10 to-sky-300/50"
       >
-        <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1">
-          <>
+        <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1 relative">
+          <div className="relative">
             <SectionTitle title="Featured Events" color="dark" />
             <div className="mt-16 animate-pulse">
               <Airplane />
             </div>
-          </>
+          </div>
         </PageWrapper>
       </PageSection>
       <PageSection

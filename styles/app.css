@@ -11,6 +11,7 @@
 /** Set base font to 'Poppins', sans-serif */
 html, body {
     font-family: 'Poppins', sans-serif;
+    background-image: url(/public/assets/Home\ Page\ Illustration.svg);
 }
 
 /** Set Scrollable element to have no visual scroll bar */
