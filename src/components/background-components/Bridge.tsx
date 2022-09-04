@@ -4,7 +4,7 @@ const Bridge: React.FC = (props: any) => {
       className="md:block opacity-75 overflow-hidden hidden absolute z-0 top-0 w-full transform scale-[165%] origin-top -translate-x-[5%] -translate-y-[2.5%]"
       viewBox="0 0 2365 2943"
       fill="none"
-      preserveAspectRatio="xMidYMid slice"
+     
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
