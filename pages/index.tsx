@@ -169,7 +169,7 @@ const Home: NextPage = () => {
       >
         {/* brig svg */}
         <>
-          <Bridge />
+          { /*<Bridge />*/}
           <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1 relative">
             <div className="relative">
               <SectionTitle title="Featured Events" color="dark" />
