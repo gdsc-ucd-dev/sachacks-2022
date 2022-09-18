@@ -3,8 +3,8 @@ import routes from "@/data/routes";
 
 const DesktopNav: React.FC = () => {
   return (
-    <nav className="hidden lg:flex items-center justify-center">
-      <ul className="flex items-center space-x-4 xl:space-x-6">
+    <nav className="hidden lg:flex items-center justify-center text-white">
+      <ul className="flex items-center space-x-8 xl:space-x-16 pl-8">
         {routes.map((route, index) => (
           <a
             key={index}

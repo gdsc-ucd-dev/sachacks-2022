@@ -20,24 +20,24 @@ const MobileNav: React.FC = () => {
             className={join(
               "transition-all w-8 h-1 rounded-full border",
               mobileMenuView
-                ? "bg-highlight/0 border-highlight/100"
-                : "bg-highlight/100 border-highlight/0"
+                ? "bg-white/0 border-white/100"
+                : "bg-white/100 border-white/0"
             )}
           />
           <span
             className={join(
               "h-1 mx-auto rounded-full my-1.5 transition-all border",
               mobileMenuView
-                ? "w-4 bg-highlight/0 border-highlight/100"
-                : "w-8  bg-highlight border-highlight/0"
+                ? "w-4 bg-white/0 border-white/100"
+                : "w-8  bg-white border-white/0"
             )}
           />
           <span
             className={join(
               "transition-all w-8 h-1 rounded-full border",
               mobileMenuView
-                ? "bg-highlight/0 border-highlight/100"
-                : "bg-highlight/100 border-highlight/0"
+                ? "bg-white/0 border-white/100"
+                : "bg-white/100 border-white/0"
             )}
           />
         </button>

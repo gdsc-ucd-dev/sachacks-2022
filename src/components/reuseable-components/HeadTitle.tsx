@@ -1,8 +1,8 @@
 /**components */
 import AppTexts from "@/data/texts";
-
 /**next&react */
 import Link from "next/link";
+import TestHeaderTitle from "../background-components/TestHeaderTitle";
 
 const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
   return (
@@ -10,13 +10,13 @@ const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
       <Link href="/">
         <>
           {/* <span className="w-8 h-8 rounded-full bg-highlight" /> */}
-          {/* <img
-            src="assets/rocket.png"
+          <img
+            src="assets//Mask.png"
             alt=""
-            className="relative top-4 transform "
-          /> */}
+            className="relative pr-4 stransform "
+          />
           <a className="flex flex-col items-center" href="#index-hero">
-            <span>{AppTexts.TITLE}</span>
+            <span><TestHeaderTitle/></span>
             {mountedIn === "footer" && (
               <span className="font-thin text-sm">
                 {AppTexts.KEYWORDS.join(", ")}

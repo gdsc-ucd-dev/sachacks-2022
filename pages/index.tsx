@@ -6,7 +6,7 @@ import Airplane from "@/components/events-components/Airplane";
 import SEO from "@/components/reuseable-components/SEO";
 import Card from "@/components/values-components/Card";
 import FAQ from "@/components/faq-components/FAQ";
-import Mountain from "@/components/background-components/Mountain";
+import SacHacks from "@/components/background-components/SacHacks";
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -18,12 +18,13 @@ import type { NextPage } from "next";
 import React from "react";
 
 /**react-icons */
-import { BsDiscord } from "react-icons/bs";
 
 /**images */
-import myBg from "public/assets/Home Page Illustration.svg";
-import Bridge from "@/components/background-components/Bridge";
-import TestMountain from "@/components/background-components/TestMountain";
+import Bulb from "@/components/values-components/Bulb";
+import Bg1 from "@/components/background-components/Bg1";
+import Bg2 from "@/components/background-components/Bg2";
+import TwoCats from "@/components/background-components/TwoCats";
+import Design from "@/components/values-components/Bulb";
 
 const Home: NextPage = () => {
   return (
@@ -32,132 +33,169 @@ const Home: NextPage = () => {
       <SEO />
 
       {/* PAGE UI */}
-      <div className="relative">
-        {/* <span className="h-full w-screen absolute flex justify-center"><Mountain/></span> */}
-
-        {/* most recent edit */}
-        {/* <Mountain /> */}
-
-        {/* <div className="md:block w-full overflow-hidden hidden absolute z-0 top-0 left-0 ">
-          <Mountain />
-        </div> */}
-        {/* <TestMountain /> */}
+      <div className="relative text-white">
+        <Bg1></Bg1>
         <PageSection
           id="index-hero"
-          className="relative z-20 w-full h-screen flex flex-col justify-center bg-transparent"
+          className="relative z-20 w-full md:h-screen flex flex-col justify-center pb-10"
         >
-          {/* test mountain with new svg */}
           <>
-            <PageWrapper className="w-full px-8 py-16 max-w-6xl mx-auto grid grid-cols-1 relative z-10">
-              <div className="relative">
-                <div className="mb-6">
-                  <h2 className="font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
-                    SacHacks IV
-                  </h2>
-                  <p className="text-base lg:text-lg 2xl:text-xl">
+            <PageWrapper className="w-full px-8 max-w-6xl mx-auto relative z-10 flex flex">
+              <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+                <div className="flex flex-col justify-start">
+                  <div className="max-w-screen-lg">
+                    <SacHacks />
+                  </div>
+                  {/* font-semibold text-2xl lg:text-3xl 2xl:text-4xl mb-1 */}
+                  <h3 className="text-xl lg:text-2xl 2xl:text-3xl pt-2">
+                    {AppTexts.KEYWORDS.join(". ")}
+                  </h3>
+                  <p className="text-base lg:text-lg 2xl:text-xl font-light pt-3">
                     Join Us Virtually On October 15-16, 2022
                   </p>
-                </div>
-
-                <div className="mb-6">
-                  <h3 className="font-semibold text-2xl lg:text-3xl 2xl:text-4xl mb-1">
-                    {AppTexts.KEYWORDS.join(", ")}
-                  </h3>
-                  <p className="lg:text-lg">
-                    Powered by <strong>IBM</strong> and{" "}
-                    <strong>GDSC @ UCD</strong>
-                  </p>
-                </div>
-
-                <div>
-                  <p className="font-normal text-sm leading-6 lg:text-base lg:leading-7 2xl:text-lg 2xl:leading-8 mb-6 max-w-2xl">
-                    SacHacks is the first major intercollegiate hackathon in the
-                    Sacramento, California area. Our passion is to cultivate the
-                    untapped potential of those in Sac and beyond by launching
-                    their ideas into action during a 24-hour hackathon.
-                  </p>
+                  <div className="pt-10 pb-10">
+                    <ul className="flex items-center justify-start space-x-2 md:space-x-4 mb-8">
+                      <p className="lg:text-lg">Powered by</p>
+                      <img src="/assets/IBMLogo.png" alt="" />
+                      <img src="/assets/gdsc.png" alt="" />
+                    </ul>
+                  </div>
                   <ul className="flex items-center justify-start space-x-2 md:space-x-4 mb-8">
                     <a
                       href={links.preRegister}
                       target="_blank"
                       rel="noreferrer"
-                      className="shadow-xl bg-light text-highlight px-8 py-3 rounded-full text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full sm:w-48 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Pre-register
                     </a>
                     <a
                       href={links.sponsorUs}
-                      className="shadow-xl bg-highlight text-light px-8 py-3 rounded-full text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full sm:w-48 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Sponsor Us
                     </a>
                   </ul>
-                  <div>
-                    <a
-                      href="https://discord.com/invite/cWjFh4XxyZ"
-                      className="flex space-x-2 items-center text-lg font-semibold justify-start transition-all lg:hover:text-blue-500"
-                    >
-                      <span>Discord</span>
-                      <BsDiscord className="text-xl" />
-                    </a>
-                  </div>
+                </div>
+                <div className="hidden lg:block">
+                  <img src="/assets/tower.png" alt=""></img>
                 </div>
               </div>
             </PageWrapper>
           </>
         </PageSection>
+      </div>
 
+      <div className="relative">
         <PageSection
           id="index-values"
-          className="w-full flex flex-col justify-center bg-transparent relative z-10"
+          className="w-full flex flex-col justify-center relative z-10"
         >
-          <PageWrapper className="w-full px-8 pt-28 pb-14 max-w-6xl mx-auto grid grid-cols-1">
+          <PageWrapper className="w-full md:px-24 md:pb-14 max-w-6xl mx-auto grid grid-cols-1">
             <>
-              <SectionTitle title="Our Values" color="dark" />
-              <ul className="w-full h-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 relative">
-                <div className="relative w-full h-80 flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/90 to-sky-300/90">
-                  <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
-                    <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
-                      Design
-                    </h4>
-                  </article>
-                  <Card.design />
-                  <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
-                    <p className="text-center text-lg">
-                      Create something great, unique, and innovative. Bring your
-                      ideas to life.
-                    </p>
+              <Bg2 />
+              <ul className="w-full h-full grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative md:pb-8 pt-8">
+                <Card.hackers />
+                {/* <div className="absolute bottom-0 w-full h-60 flex flex-col justify-start items-center p-8">
+                    <h3 className="text-white text-center font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
+                      500+
+                    </h3>
+                    <h1 className="cardText text-[#FB98F5] text-xl text-center font-semibold pt-8 drop-shadow-lg shadow-red-500">
+                      Hackers
+                    </h1>
+                  </div> */}
+                <div className="relative w-full flex flex-col justify-start items-center overflow-hidden">
+                  <Card.hackers />
+                  <div className="absolute bottom-0 w-full h-60 flex flex-col justify-start items-center p-8">
+                    <h3 className="text-white text-center font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
+                      24
+                    </h3>
+                    <h1 className="cardText text-[#FB98F5] text-xl text-center font-semibold pt-8 drop-shadow-lg shadow-red-500">
+                      Hours
+                    </h1>
                   </div>
                 </div>
-                <div className="relative w-full h-80 flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/90 to-sky-300/90">
-                  <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
-                    <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
-                      Code
-                    </h4>
-                  </article>
-                  <Card.code />
-                  <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
-                    <p className="text-center text-lg">
-                      Something groundbreaking. Build your idea to make the
-                      World better.
-                    </p>
+                <div className="relative w-full flex flex-col justify-start items-center overflow-hidden">
+                  <Card.hackers />
+                  <div className="absolute bottom-0 w-full h-60 flex flex-col justify-start items-center p-8">
+                    <h3 className="text-white text-center font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
+                      60+
+                    </h3>
+                    <h1 className="cardText text-[#FB98F5] text-xl text-center font-semibold pt-8 drop-shadow-lg shadow-red-500">
+                      Projects
+                    </h1>
                   </div>
-                </div>{" "}
-                <div className="relative w-full h-80 flex flex-col justify-between items-center overflow-hidden rounded-xl shadow-xl backdrop-blur-sm bg-gradient-to-b from-sky-100/90 to-sky-300/90">
-                  <article className="relative z-10 p-8 flex flex-col items-center space-y-4">
-                    <h4 className="font-semibold text-xl lg:text-2xl 2xl:text-3xl">
-                      Launch
-                    </h4>
-                  </article>
-                  <Card.launch />
-                  <div className="absolute cursor-pointer opacity-0 ease-out backdrop-blur-md  hover:opacity-100 bottom-0 transform transition-all w-full h-full flex flex-col justify-center p-8">
-                    <p className="text-center text-lg">
-                      Something big. Pitch your ideas to our panel of judges who
-                      are the best in their field.
-                    </p>
+                </div>
+                <div className="relative w-full flex flex-col justify-start items-center overflow-hidden">
+                  <Card.hackers />
+                  <div className="absolute bottom-0 w-full h-60 flex flex-col justify-start items-center p-8">
+                    <h3 className="text-white text-center font-bold text-4xl lg:text-5xl 2xl:text-6xl mb-1">
+                      $8k+
+                    </h3>
+                    <h1 className="cardText text-[#FB98F5] text-xl text-center font-semibold pt-8 drop-shadow-lg shadow-red-500">
+                      Prizes
+                    </h1>
                   </div>
                 </div>
               </ul>
+              <div>
+                <ul className="relative z-20 w-full flex flex-row justify-center md:justify-start items-center text-center md:text-left">
+                  <div className="w-full md:w-7/12 h-full flex flex-col md:justify-start md:items-start justify-center items-center px-8">
+                    <h1 className="cardText text-white text-2xl lg:text-3xl 2xl:text-4xl font-bold">
+                      A Space for Everyone
+                    </h1>
+                    <p className="text-white pt-2 text-lg">
+                      SacHacks is the first major intercollegiate hackathon in
+                      the Sacramento, California area. Our passion is to
+                      cultivate the untapped potential of those in Sac by
+                      providing them with the opportunity to launch their ideas
+                      in a public venue. We provide the place, you bring your
+                      ideas, and we have a friendly competition between all
+                      creative coders to launch their ideas into action during a
+                      24-hour hackathon.
+                    </p>
+                  </div>
+                  <div className="w-5/12 flex flex-col justify-center items-center hidden md:block">
+                    <TwoCats />
+                  </div>
+                </ul>
+              </div>
+              <div>
+                <ul className="relative z-20 w-full flex flex-row justify-center items-center">
+                  <div className="relative w-full text-center flex flex-col justify-center items-center px-8">
+                    <Bulb />
+                    <h1 className="designText text-white text-2xl lg:text-3xl 2xl:text-4xl pb-2 font-semibold">
+                      DESIGN
+                    </h1>
+                    <h4 className="text-white text-md lg:text-xl 2xl:text-2xl font-light">
+                      Create something great, unique, and innovative. Bring your
+                      ideas to life{" "}
+                    </h4>
+                  </div>
+                  <div className="relative w-full text-center flex flex-col justify-center items-center px-8">
+                    <Bulb />
+                    <h1 className="designText text-white text-2xl lg:text-3xl 2xl:text-4xl pb-2 font-semibold">
+                      CODE
+                    </h1>
+                    <h4 className="text-white text-md lg:text-xl 2xl:text-2xl font-light">
+                      Something groundbreaking. Build your idea to make the
+                      World better.
+                    </h4>
+                  </div>
+                  <div className="relative w-full text-center flex flex-col justify-center items-center px-8">
+                    <div>
+                      <Bulb />
+                    </div>
+                    <h1 className="designText text-white text-2xl lg:text-3xl 2xl:text-4xl pb-2 font-semibold">
+                      LAUNCH
+                    </h1>
+                    <h4 className="text-white text-md lg:text-xl 2xl:text-2xl font-light">
+                      Create something great, unique, and innovative. Bring your
+                      ideas to life{" "}
+                    </h4>
+                  </div>
+                </ul>
+              </div>
             </>
           </PageWrapper>
         </PageSection>
@@ -172,10 +210,10 @@ const Home: NextPage = () => {
           {/* <Bridge /> */}
           <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1 relative">
             <div className="relative">
-              <SectionTitle title="Featured Events" color="dark" />
-              <div className="mt-16 animate-pulse">
+              {/* <SectionTitle title="Featured Events" color="dark" /> */}
+              {/* <div className="mt-16 animate-pulse">
                 <Airplane />
-              </div>
+              </div> */}
             </div>
           </PageWrapper>
         </>
