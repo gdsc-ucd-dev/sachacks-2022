@@ -3,10 +3,31 @@ import PageSection from "@/components/reuseable-components/PageSection";
 import PageWrapper from "@/components/reuseable-components/PageWrapper";
 import SectionTitle from "@/components/reuseable-components/SectionTitle";
 import Airplane from "@/components/events-components/Airplane";
+import Team1 from "@/components/events-components/member";
+import Team111 from "@/components/events-components/member111";
+import Team112 from "@/components/events-components/member112";
+import Team13 from "@/components/events-components/member13";
+import Team5 from "@/components/events-components/member5";
+import Team6 from "@/components/events-components/member6";
+import Team7 from "@/components/events-components/member7";
+import Team8 from "@/components/events-components/member8";
+import Team9 from "@/components/events-components/member9";
+import Team2 from "@/components/events-components/member1";
+import Team4 from "@/components/events-components/member4";
 import SEO from "@/components/reuseable-components/SEO";
 import Card from "@/components/values-components/Card";
 import FAQ from "@/components/faq-components/FAQ";
 import SacHacks from "@/components/background-components/SacHacks";
+import Mountain from "@/components/background-components/Mountain";
+import TeamDesign from "@/components/events-components/teamDesign";
+ import CountDownTimer from '@/components/events-components/countdown';
+ import FootDesign1 from '@/components/events-components/footDesign1';
+ import FootDesign2 from '@/components/events-components/footDesign2';
+ import FootDesign3 from '@/components/events-components/footDesign3';
+ import FootDesign from '@/components/events-components/footDesign';
+ import Md_member from "@/components/events-components/md_member";
+ import Sm_footer from '@/components/events-components/Sm_footer';
+ 
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -25,6 +46,12 @@ import Bg1 from "@/components/background-components/Bg1";
 import Bg2 from "@/components/background-components/Bg2";
 import TwoCats from "@/components/background-components/TwoCats";
 import Design from "@/components/values-components/Bulb";
+import myBg from "public/assets/Home Page Illustration.svg";
+import Bridge from "@/components/background-components/Bridge";
+import BG5 from "@/components/background-components/BG5";
+import MdBG5 from "@/components/background-components/mdBG5";
+import BG4 from "@/components/events-components/BG4-md";
+import Sm_team from '@/components/events-components/Sm_team';
 
 const Home: NextPage = () => {
   return (
@@ -202,50 +229,179 @@ const Home: NextPage = () => {
       </div>
 
       <PageSection
-        id="index-events"
-        className="w-full flex flex-col justify-center bg-transparent relative z-10"
+        id="index-sponsors"
+        className="flex justify-center relative"
       >
         {/* brig svg */}
         <>
-          {/* <Bridge /> */}
-          <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1 relative">
-            <div className="relative">
-              {/* <SectionTitle title="Featured Events" color="dark" /> */}
-              {/* <div className="mt-16 animate-pulse">
+        <div className="relative"> 
+        <Bridge />
+        </div>
+          
+          <PageWrapper className="w-full pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
+            <div className="absolute content-center">
+              <div className="w-full mt-40 ml-[0] pb-10"><SectionTitle title="Our Sponsors and Featured Events" color="light" />
+            </div>
+                <div className="mt-20 animate-pulse mr-10">
                 <Airplane />
               </div> */}
             </div>
           </PageWrapper>
         </>
       </PageSection>
+
+      <PageSection
+        id="index-events"
+        className=" flex justify-center relative "
+      >
+        {/* brig svg */}
+        <>
+        <div className="relative lg:flex hidden"> 
+        <Mountain />
+        
+        </div>
+        <div className=' relative md:flex hidden'>
+        <BG4 />
+        </div>
+
+        <div className=' relative sm:flex hidden'>
+        <BG4 />
+        </div>
+          
+          
+          <PageWrapper className="w-full mt-20 pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
+            <div className="absolute ">
+              <div className="ml-[0] pb-10 mb-10 md:ml-12"><SectionTitle title="The Team" color="light" />
+            </div>
+            <div className='lg:block hidden'>
+                {/* <div className=" block pb-14">
+                
+               <div className='pr-28 inline'><Team11 /></div>  <div className='pr-28 inline'> <Team12 /></div> 
+               <div className='pr-24 inline'><Team13 /></div>  <div className='pr-28 inline'> <Team2 /></div>
+              </div> */}
+              <div className='flex flex-row justify-between justify-center mr-48 mb-14 '>
+              <Team111 /> 
+              </div>
+
+              {/* <div className="   block pb-14">
+                
+              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
+               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
+              </div> */}
+            <div className='flex flex-row justify-between justify-center mr-32 mb-14'>
+              <Team112 />
+              </div>
+
+              {/* <div className=" block pb-14">
+                
+              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
+               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
+              </div> */}
+               <div className='flex flex-row justify-between justify-center mr-32 mb-14 '>
+              <Team9 /> 
+              </div>
+              {/* <div className=" block pb-14">
+                
+              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
+               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
+              </div> */}
+               <div className='flex flex-row justify-between justify-center mr-32 mb-14 '>
+              <Team4 /> 
+              </div>
+              <div className="  inline">
+                
+              <div className='pr-28 inline'><Team1 /></div>  <div className=' inline'> <Team2 /></div> 
+              <div className='pl-60 -translate-y-80 mt-10'>
+              <TeamDesign />
+              </div>
+              </div>
+              </div>
+
+              <div className='md:flex flex-start hidden -translate-y-72 -translate-x-14'>
+                <Md_member />
+              </div>
+
+              <div className='sm:flex flex-start hidden '>
+                <Sm_team />
+              </div>
+              
+            </div>
+          </PageWrapper>
+        </>
+      </PageSection>
+
       <PageSection
         id="index-FAQ"
-        className="min-h-screen w-full p-8 flex flex-col justify-center bg-transparent relative z-10"
-      >
-        <PageWrapper className="w-full p-8 max-w-6xl mx-auto bg-sky-200/70 backdrop-blur-sm shadow-xl rounded-xl grid grid-cols-1">
+        className="min-h-screen w-full  flex justify-center relative " >
+          
+          <><div className="md:relative lg:hidden sm:hidden"> 
+        <MdBG5 />
+        
+        </div>
+          <div className="lg:relative md:hidden sm:hidden"> 
+        <BG5 />
+        
+        </div>
+        <div className="sm:flex relative hidden"> 
+        <MdBG5 />
+        
+        </div>
+        
+        
+        <PageWrapper className="w-3/4 mt-20 ml-36 mr-48  backdrop-blur-sm   absolute">
           <>
-            <SectionTitle title="FAQ" color="dark" />
-            <ul className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16  ">
+            <SectionTitle title="FAQ" color="light" />
+            <ul className="w-full grid grid-cols-1  gap-8 mt-16  " >
               {FAQItems.map((faq, index) => (
                 <FAQ {...faq} key={index} />
               ))}
             </ul>
-          </>
-        </PageWrapper>
-      </PageSection>
-      <PageSection
-        id="index-sponsors"
-        className="w-full flex flex-col justify-center bg-transparent relative z-20"
-      >
-        <PageWrapper className="w-full px-8 pt-14 pb-28 max-w-6xl mx-auto grid grid-cols-1">
-          <>
-            <SectionTitle title="Sponsors" color="dark" />
-            <div className="mt-16 animate-pulse">
-              <Airplane />
+            <div className='lg:mt-40 md:mt-36 sm:mt-32 mt-20'>
+            <SectionTitle title="Hackathon Countdown" color="light" />
+            <div className='text-white  mb-20'>
+        <CountDownTimer days={2} hours={0} minutes={1} seconds={0}/>
+        </div>
+        <div className=''>
+        <a
+                      href={links.preRegister}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="shadow-xl bg-[#8E0084] text-white px-8 py-3 rounded-half text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                    >
+                      Pre-register
+                    </a>
+        </div>
+        
             </div>
+<div className='lg:flex flex-row w-3/4 hidden '>
+  <div className='translate-y-16'>
+  <FootDesign1 /> 
+  </div>
+ 
+<div className='-translate-y-10 ml-[8%]'>
+<FootDesign2 />
+</div>
+<div className='-translate-y-40 ml-[8%]'>
+<FootDesign3 />
+</div>
+
+</div>
+
+<div className='md:flex flex-row w-3/4 -translate-y-24 hidden'>
+  <FootDesign />
+</div>
+<div className='sm:flex flex-row w-3/4 -translate-y-0 hidden'>
+<Sm_footer />
+</div>
+            
           </>
+          
+         
+          
         </PageWrapper>
+        </>
       </PageSection>
+     
     </React.Fragment>
   );
 };
