@@ -25,3 +25,7 @@ html, body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+mask#mask0_1239_3184{
+    mask-type:alpha;
+}

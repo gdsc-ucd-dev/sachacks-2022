@@ -22,10 +22,10 @@ const MLHPopUp: React.FC<MLHPopUpProps> = ({ scroll }) => {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
       >
-        <rect x="0.598633" width="86" height="150" fill="url(#pattern0)" />
+        <rect x="0.598633" width="86" height="150" fill="url(#pattern100)" />
         <defs>
           <pattern
-            id="pattern0"
+            id="pattern100"
             patternContentUnits="objectBoundingBox"
             width="1"
             height="1"

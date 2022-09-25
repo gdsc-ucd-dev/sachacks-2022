@@ -41,7 +41,7 @@ const FAQ: FAQComponent = ({ Q, A, links }) => {
                 href={link}
                 className="text-white-500 transition-all lg:hover:text-white-500/50"
               >
-                Follow Link
+               <u>Click here</u> 
               </a>
             ))}
           </ul>
