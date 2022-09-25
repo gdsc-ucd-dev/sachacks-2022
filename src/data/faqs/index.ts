@@ -33,8 +33,8 @@ const FAQItems: FAQs = [
   },
   {
     Q: "When is the application deadline?",
-    A: "Our officer application closes on May 23, 2022. Our application to compete hasn’t been released yet–stay tuned by joining our discord server and following our socials to apply as soon as the applications are released!",
-    links: null,
+    A: "Registration is open right now and will close on 9th October, 2022. Apply soon by clicking on the link below!",
+    links: ["https://docs.google.com/forms/d/1Y5GoMXa39tvC6whL8ZJSVHV2h5WvZ_BuIU4QM5F5858/viewform?chromeless=1&edit_requested=true&pli=1"],
   },
   {
     Q: "Code of Conduct?",
