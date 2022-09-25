@@ -20,17 +20,13 @@ import FAQ from "@/components/faq-components/FAQ";
 import SacHacks from "@/components/background-components/SacHacks";
 import Mountain from "@/components/background-components/Mountain";
 import TeamDesign from "@/components/events-components/teamDesign";
-import CountDownTimer from '@/components/events-components/countdown';
-import FootDesign1 from '@/components/events-components/footDesign1';
-import FootDesign2 from '@/components/events-components/footDesign2';
-import FootDesign3 from '@/components/events-components/footDesign3';
-import FootDesign from '@/components/events-components/footDesign';
+import CountDownTimer from "@/components/events-components/countdown";
+import FootDesign1 from "@/components/events-components/footDesign1";
+import FootDesign2 from "@/components/events-components/footDesign2";
+import FootDesign3 from "@/components/events-components/footDesign3";
+import FootDesign from "@/components/events-components/footDesign";
 import Md_member from "@/components/events-components/md_member";
-import Sm_footer from '@/components/events-components/Sm_footer';
-import Md_team from "@/components/events-components/Md_team";
-import Sm_design from "@/components/events-components/Sm_design";
-
-
+import Sm_footer from "@/components/events-components/Sm_footer";
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -55,11 +51,10 @@ import Bridge from "@/components/background-components/Bridge";
 import BG5 from "@/components/background-components/BG5";
 import MdBG5 from "@/components/background-components/mdBG5";
 import BG4 from "@/components/events-components/BG4-md";
-import BG4_sm from "@/components/events-components/BG4-sm";
-import Sm_team from '@/components/events-components/Sm_team';
-import BG5_sm from "@/components/background-components/BG5_sm";
-import BG3_sm from "@/components/events-components/BG3-sm";
-
+import Sm_team from "@/components/events-components/Sm_team";
+import FourCards from "@/components/values-components/FourCards";
+import Launch from "@/components/values-components/Launch";
+import Tower from "@/components/background-components/Tower";
 
 const Home: NextPage = () => {
   return (
@@ -76,8 +71,8 @@ const Home: NextPage = () => {
         >
           <>
             <PageWrapper className="w-full px-8 max-w-6xl mx-auto relative z-10 flex flex">
-              <div className="grid md:grid-cols-2 max-w-[1240px] h-screen m-auto">
-                <div className="flex flex-col justify-center shrink-1">
+              <div className="grid lg:grid-cols-2 max-w-[1240px] h-screen m-auto">
+                <div className="flex flex-col justify-center">
                   <div className="max-w-screen-lg">
                     <SacHacks />
                   </div>
@@ -210,23 +205,21 @@ const Home: NextPage = () => {
       <PageSection id="index-sponsors" className="flex justify-center relative">
         {/* brig svg */}
         <>
-        <div className="relative sm:hidden"> 
-        <Bridge />
-        </div>
-        <div className="relative sm:flex hidden"> 
-        <BG3_sm />
-        </div>
-        {/* <div className=' relative sm:flex hidden  '>
-        <BG4_sm />
-        </div> */}
-          
+          <div className="relative">
+            <Bridge />
+          </div>
+
           <PageWrapper className="w-full pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
             <div className="absolute content-center">
-              <div className="w-full mt-40 ml-[0] pb-0"><SectionTitle title="Our Sponsors and Featured Events" color="light" />
-            </div>
-                <div className="mt-20 sm:mt-10 animate-pulse mr-16">
+              <div className="w-full mt-40 ml-[0] pb-10">
+                <SectionTitle
+                  title="Our Sponsors and Featured Events"
+                  color="light"
+                />
+              </div>
+              <div className="mt-20 animate-pulse mr-10">
                 <Airplane />
-              </div> 
+              </div>
             </div>
           </PageWrapper>
         </>
@@ -246,11 +239,6 @@ const Home: NextPage = () => {
             <BG4 />
           </div>
 
-        <div className=' relative sm:flex hidden  '>
-        <BG4_sm />
-        </div>
-          
-          
           <PageWrapper className="w-full mt-20 pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
             <div className="absolute ">
               <div className="ml-[0] pb-10 mb-10 md:ml-12">
@@ -286,51 +274,13 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              {/* <div className="   block pb-14">
-                
-              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
-               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
-              </div> */}
-            <div className='flex flex-row justify-between justify-center mr-32 mb-14'>
-              <Team112 />
-              </div>
-
-              {/* <div className=" block pb-14">
-                
-              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
-               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
-              </div> */}
-               <div className='flex flex-row justify-between justify-center mr-32 mb-14 '>
-              <Team9 /> 
-              </div>
-              {/* <div className=" block pb-14">
-                
-              <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div> 
-               <div className='pr-28 inline'><Team1 /></div>  <div className='pr-28 inline'> <Team2 /></div>
-              </div> */}
-               <div className='flex flex-row justify-between justify-center mr-32 mb-14 '>
-              <Team4 /> 
-              </div>
-              <div className="  inline">
-                
-              <div className='pr-28 inline'><Team1 /></div>  <div className=' inline'> <Team2 /></div> 
-              <div className='pl-60 -translate-y-80 mt-10'>
-              <TeamDesign />
-              </div>
-              </div>
-              </div>
-
-              <div className='md:flex flex-start hidden  ml-12'>
-                <Md_team />
+              <div className="md:flex flex-start hidden -translate-y-72 -translate-x-14">
+                <Md_member />
               </div>
 
               <div className="sm:flex flex-start hidden ">
                 <Sm_team />
               </div>
-              <div className='sm:flex flex-end hidden translate-x-20 -translate-y-16'>
-                <Sm_design />
-              </div >
-              
             </div>
           </PageWrapper>
         </>
@@ -338,58 +288,18 @@ const Home: NextPage = () => {
 
       <PageSection
         id="index-FAQ"
-        className="min-h-screen w-full  flex justify-center relative " >
-          
-          <><div className="md:relative lg:hidden sm:hidden"> 
-        <MdBG5 />
-        
-        </div>
-          <div className="lg:relative md:hidden sm:hidden"> 
-        <BG5 />
-        
-        </div>
-        <div className="sm:flex relative hidden"> 
-        <BG5_sm />
-        
-        </div>
-        
-        
-        <PageWrapper className="w-3/4 mt-20 ml-36 mr-48  backdrop-blur-sm   absolute">
-          <>
-            <SectionTitle title="FAQ" color="light" />
-            <ul className="w-full grid grid-cols-1  gap-8 mt-16  " >
-              {FAQItems.map((faq, index) => (
-                <FAQ {...faq} key={index} />
-              ))}
-            </ul>
-            <div className='lg:mt-40 md:mt-36 sm:mt-32 mt-20'>
-            <SectionTitle title="Hackathon Countdown" color="light" />
-            <div className='text-white  mb-20'>
-        <CountDownTimer days={2} hours={0} minutes={1} seconds={0}/>
-        </div>
-        <div className=''>
-        <a
-                      href={links.preRegister}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="shadow-xl bg-[#8E0084] text-white px-8 py-3 rounded-half text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
-                    >
-                      Register
-                    </a>
-        </div>
-        
-            </div>
-<div className='lg:flex flex-row w-3/4 hidden '>
-  <div className='translate-y-16'>
-  <FootDesign1 /> 
-  </div>
- 
-<div className='-translate-y-10 ml-[8%]'>
-<FootDesign2 />
-</div>
-<div className='-translate-y-40 ml-[8%]'>
-<FootDesign3 />
-</div>
+        className="min-h-screen w-full  flex justify-center relative "
+      >
+        <>
+          <div className="md:relative lg:hidden sm:hidden">
+            <MdBG5 />
+          </div>
+          <div className="lg:relative md:hidden sm:hidden">
+            <BG5 />
+          </div>
+          <div className="sm:flex relative hidden">
+            <MdBG5 />
+          </div>
 
           <PageWrapper className="w-3/4 mt-20 ml-36 mr-48  backdrop-blur-sm   absolute">
             <>
@@ -420,18 +330,22 @@ const Home: NextPage = () => {
                   <FootDesign1 />
                 </div>
 
-<div className='md:flex flex-row w-3/4 -translate-y-40 hidden'>
-  <FootDesign />
-</div>
-<div className='sm:flex flex-row w-3/4 -translate-y-[5%] translate-x-[25%] hidden'>
-<Sm_footer />
-</div>
-            
-          </>
-          
-         
-          
-        </PageWrapper>
+                <div className="-translate-y-10 ml-[8%]">
+                  <FootDesign2 />
+                </div>
+                <div className="-translate-y-40 ml-[8%]">
+                  <FootDesign3 />
+                </div>
+              </div>
+
+              <div className="md:flex flex-row w-3/4 -translate-y-24 hidden">
+                <FootDesign />
+              </div>
+              <div className="sm:flex flex-row w-3/4 -translate-y-0 hidden">
+                <Sm_footer />
+              </div>
+            </>
+          </PageWrapper>
         </>
       </PageSection>
     </React.Fragment>
