@@ -6,7 +6,7 @@ import TestHeaderTitle from "../background-components/TestHeaderTitle";
 
 const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
   return (
-    <h1 className="flex items-center space-x-2 font-bold text-xl">
+    <h1 className="flex items-center space-x-2 font-bold text-xl space-x-3">
       <Link href="/">
         <>
           {/* <span className="w-8 h-8 rounded-full bg-highlight" /> */}
@@ -15,7 +15,7 @@ const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
             alt=""
             className="relative pr-4 stransform "
           />
-          <a className="flex flex-col items-center" href="#index-hero">
+          <a className="flex flex-col items-center " href="#index-hero">
             <span><TestHeaderTitle/></span>
             {mountedIn === "footer" && (
               <span className="font-thin text-sm">

@@ -27,7 +27,10 @@ import TeamDesign from "@/components/events-components/teamDesign";
  import FootDesign from '@/components/events-components/footDesign';
  import Md_member from "@/components/events-components/md_member";
  import Sm_footer from '@/components/events-components/Sm_footer';
- 
+ import Md_team from "@/components/events-components/Md_team";
+ import Sm_design from "@/components/events-components/Sm_design";
+
+
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -51,7 +54,11 @@ import Bridge from "@/components/background-components/Bridge";
 import BG5 from "@/components/background-components/BG5";
 import MdBG5 from "@/components/background-components/mdBG5";
 import BG4 from "@/components/events-components/BG4-md";
+import BG4_sm from "@/components/events-components/BG4-sm";
 import Sm_team from '@/components/events-components/Sm_team';
+import BG5_sm from "@/components/background-components/BG5_sm";
+import BG3_sm from "@/components/events-components/BG3-sm";
+
 
 const Home: NextPage = () => {
   return (
@@ -68,7 +75,7 @@ const Home: NextPage = () => {
         >
           <>
             <PageWrapper className="w-full px-8 max-w-6xl mx-auto relative z-10 flex flex">
-              <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
+              <div className="grid lg:grid-cols-2 max-w-[1240px] m-auto mt-20">
                 <div className="flex flex-col justify-start">
                   <div className="max-w-screen-lg">
                     <SacHacks />
@@ -234,17 +241,23 @@ const Home: NextPage = () => {
       >
         {/* brig svg */}
         <>
-        <div className="relative"> 
+        <div className="relative sm:hidden"> 
         <Bridge />
         </div>
+        <div className="relative sm:flex hidden"> 
+        <BG3_sm />
+        </div>
+        {/* <div className=' relative sm:flex hidden  '>
+        <BG4_sm />
+        </div> */}
           
           <PageWrapper className="w-full pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
             <div className="absolute content-center">
-              <div className="w-full mt-40 ml-[0] pb-10"><SectionTitle title="Our Sponsors and Featured Events" color="light" />
+              <div className="w-full mt-40 ml-[0] pb-0"><SectionTitle title="Our Sponsors and Featured Events" color="light" />
             </div>
-                <div className="mt-20 animate-pulse mr-10">
+                <div className="mt-20 sm:mt-10 animate-pulse mr-16">
                 <Airplane />
-              </div> */}
+              </div> 
             </div>
           </PageWrapper>
         </>
@@ -264,8 +277,8 @@ const Home: NextPage = () => {
         <BG4 />
         </div>
 
-        <div className=' relative sm:flex hidden'>
-        <BG4 />
+        <div className=' relative sm:flex hidden  '>
+        <BG4_sm />
         </div>
           
           
@@ -317,13 +330,16 @@ const Home: NextPage = () => {
               </div>
               </div>
 
-              <div className='md:flex flex-start hidden -translate-y-72 -translate-x-14'>
-                <Md_member />
+              <div className='md:flex flex-start hidden  ml-12'>
+                <Md_team />
               </div>
 
               <div className='sm:flex flex-start hidden '>
                 <Sm_team />
               </div>
+              <div className='sm:flex flex-end hidden translate-x-20 -translate-y-16'>
+                <Sm_design />
+              </div >
               
             </div>
           </PageWrapper>
@@ -343,7 +359,7 @@ const Home: NextPage = () => {
         
         </div>
         <div className="sm:flex relative hidden"> 
-        <MdBG5 />
+        <BG5_sm />
         
         </div>
         
@@ -368,7 +384,7 @@ const Home: NextPage = () => {
                       rel="noreferrer"
                       className="shadow-xl bg-[#8E0084] text-white px-8 py-3 rounded-half text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
-                      Pre-register
+                      Register
                     </a>
         </div>
         
@@ -387,10 +403,10 @@ const Home: NextPage = () => {
 
 </div>
 
-<div className='md:flex flex-row w-3/4 -translate-y-24 hidden'>
+<div className='md:flex flex-row w-3/4 -translate-y-40 hidden'>
   <FootDesign />
 </div>
-<div className='sm:flex flex-row w-3/4 -translate-y-0 hidden'>
+<div className='sm:flex flex-row w-3/4 -translate-y-[5%] translate-x-[25%] hidden'>
 <Sm_footer />
 </div>
             

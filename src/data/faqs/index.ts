@@ -11,7 +11,7 @@ const FAQItems: FAQs = [
   },
   {
     Q: "Where will the event take place?",
-    A: "The event will take a virtual format–so even if you can’t make it to the greater Sacramento area–you can still compete in the Hackathon. ",
+    A: "The event will take place virtually on Discord and will be open to participants across the globe. We will have engaging events, workshops, and socials with participants and industry professionals. ",
     links: null,
   },
 
