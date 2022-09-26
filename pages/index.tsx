@@ -55,10 +55,6 @@ import BG3_sm from "@/components/events-components/BG3-sm";
 import Launch from "@/components/values-components/Launch";
 import Tower from "@/components/background-components/Tower";
 
-const ExternalRedirect = ({ to, ...routeProps }) => {
-  return <Route {...routeProps} render={() => (window.location = to)} />;
-};
-
 const Home: NextPage = () => {
   return (
     <React.Fragment key="index">
