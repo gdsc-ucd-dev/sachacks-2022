@@ -13,9 +13,18 @@ module.exports = {
         highlight: "#053A43",
         purple: "#1E1E1E",
       },
+
+      animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
     
     },
-     screens: {
+    screens: {
       'sm': {'min': '240px', 'max': '767px'},
       'md': {'min': '768px', 'max': '1023px'},
       'lg': {'min': '1024px'},

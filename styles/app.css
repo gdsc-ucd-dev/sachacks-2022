@@ -4,13 +4,16 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 * {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
-
+html {
+        /* overflow: visible; */
+}
 /** Set base font to 'Poppins', sans-serif */
 html, body {
     font-family: 'Poppins', sans-serif;
     background-image: url(/public/assets/Home\ Page\ Illustration.svg);
+    
 }
 
 .designText {

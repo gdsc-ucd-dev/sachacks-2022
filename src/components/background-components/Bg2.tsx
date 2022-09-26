@@ -1,12 +1,13 @@
 const Bg2: React.FC = () => {
   return (
     <svg
-      className="sm:inline-block w-max-screen-2xl overflow-hidden hidden absolute z-0 top-0 left-0"
+      className="lg:inline-block md:inline-block h-max-screen-2xl overflow-hidden hidden absolute z-0  left-0"
       width="1440"
-      height="1161"
-      viewBox="0 0 1440 1161"
+      height="1961"
+      viewBox="0 0 1440 2161"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid slice"
     >
       <g clipPath="url(#clip0_848_2662)">
         <rect width="1440" height="1161" fill="#161036" />

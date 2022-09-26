@@ -31,17 +31,19 @@ const FAQ: FAQComponent = ({ Q, A, links }) => {
           answerView ? "block mt-3" : "mt-0 hidden"
         )}
       >
-        
         {A}
         {links && (
-          <ul className="flex justify-start items-center space-x-4" color="light">
+          <ul
+            className="flex justify-start items-center space-x-4"
+            color="light"
+          >
             {links.map((link, index) => (
               <a
                 key={index}
                 href={link}
                 className="text-white-500 transition-all lg:hover:text-white-500/50"
               >
-                Follow Link
+                <u> Click here</u>
               </a>
             ))}
           </ul>

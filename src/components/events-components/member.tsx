@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import mypic from '/Users/mukta/sachacks update/sachacks-2022/public/assets/team1.png'
+import Image from "next/image";
+import mypic from "../members/team1.png";
 const Team1: React.FC = () => {
   return (
     <Image
@@ -8,7 +8,7 @@ const Team1: React.FC = () => {
       width="170px"
       height="242px"
     />
-  )}
-  
+  );
+};
+
 export default Team1;
-  
