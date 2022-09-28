@@ -1,9 +1,7 @@
 const Bg2: React.FC = () => {
   return (
     <svg
-      className="lg:inline-block md:inline-block h-max-screen-2xl overflow-hidden hidden absolute z-0  left-0"
-      width="1440"
-      height="1961"
+      className="lg:inline-block md:inline-block h-full w-full overflow-hidden hidden z-0 left-0 flex justify-center"
       viewBox="0 0 1440 2161"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,13 +1,11 @@
 const Bg2Mid: React.FC = () => {
   return (
     <svg
-      width="1048"
       height="627"
       viewBox="0 0 1048 627"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="hidden max-h-screen absolute z-0 left-0 -mt-"
-      preserveAspectRatio="xMidYMid slice"
+      className="hidden w-full overflow-hidden hidden flex justify-center absolute z-0 left-0 "
     >
       <g clipPath="url(#clip0_1383_4272)">
         <rect width="1047.29" height="627" fill="#161036" />

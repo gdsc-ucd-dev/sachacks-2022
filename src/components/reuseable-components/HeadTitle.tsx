@@ -10,11 +10,11 @@ const HeadTitle: HeadTitleComponent = ({ mountedIn }) => {
       <Link href="/">
         <>
           {/* <span className="w-8 h-8 rounded-full bg-highlight" /> */}
-          <img
+          {/* <img
             src="assets//Mask.png"
             alt=""
             className="relative pr-4 stransform "
-          />
+          /> */}
           <a className="flex flex-col items-center " href="#index-hero">
             <span>
               <TestHeaderTitle />

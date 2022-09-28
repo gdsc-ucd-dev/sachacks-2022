@@ -1,7 +1,7 @@
 const BG5: React.FC = () => {
   return (
     <svg
-      className="w-[1440px] h-[2065px] "
+      className="w-full h-[2065px]"
       viewBox="0 0 1440 2065"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

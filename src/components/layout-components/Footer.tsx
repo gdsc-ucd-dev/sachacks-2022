@@ -15,9 +15,11 @@ const Footer: React.FC = () => {
       <footer className="w-full bg-fuchsia-900 relative z-10 bottom-0  fixed">
         <section className="relative z-0 px-8 max-w-7xl mx-auto py-8 grid grid-cols-1 grid-cols-6 gap-0 place-items-start text-light sm:ml-24  md:ml-[30%] fixed">
           <div className="w-full flex flex-col items-center items-start col-span-2 ">
-            <HeadTitle mountedIn="footer" />
+            <div className="lg:-ml-16 md:ml-20 sm:ml-20">
+              <HeadTitle mountedIn="footer" />
+            </div>
             <div className="w-full items-center items-start col-span-4 relative text-light">
-              <ul className="flex justify-start space-x-4  mt-10 ml-24 sm:mt-4 sm:ml-24 md:ml-[40%]">
+              <ul className="flex justify-start space-x-4  mt-10 ml-24 sm:mt-4 sm:ml-4 md:ml-[40%]">
                 <li>
                   <div className="row">
                     <a
@@ -119,7 +121,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </section>
-        <div className=" sm:flex md:flex flex-row text-xs hidden text-light ml-28 md:ml-[38%]">
+        <div className=" sm:flex md:flex flex-row text-xs hidden text-light ml-28 md:ml-[38%] sm:ml-[30%]">
           Made with &nbsp; <FaHeart /> &nbsp; by SacHacks 2022
         </div>
       </footer>

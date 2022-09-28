@@ -11,6 +11,7 @@ import "../styles/tailwind.css";
 import "../styles/app.css";
 
 import type { AppProps } from "next/app";
+
 import Layout from "@/components/layout-components/Layout";
 
 const SacHacks2022: ({ Component, pageProps }: AppProps) => JSX.Element = ({

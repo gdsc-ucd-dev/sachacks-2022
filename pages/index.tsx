@@ -71,7 +71,7 @@ const Home: NextPage = () => {
           <>
             <PageWrapper className="w-full px-8 max-w-6xl mx-auto relative z-10 flex flex">
               <div className="grid lg:grid-cols-2 max-w-[1240px] m-auto">
-                <div className="flex flex-col justify-center shrink-1 md:pt-24">
+                <div className="flex flex-col justify-center shrink-1 md:pt-24 sm:pt-4">
                   <div className="max-w-screen-lg">
                     <SacHacks />
                   </div>
@@ -94,13 +94,13 @@ const Home: NextPage = () => {
                       href={links.preRegister}
                       target="_blank"
                       rel="noreferrer"
-                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-36 sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Register
                     </a>
                     <a
                       href={links.sponsorUs}
-                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full lg:w-40 sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Sponsor Us
                     </a>
@@ -121,25 +121,27 @@ const Home: NextPage = () => {
       </div>
 
       <div className="relative">
-        <Bg2 />
-        <Bg2Mid />
+        <div className="absolute w-full px-0 lg:inline-block md:inline-block hidden">
+          <Mountain></Mountain>
+        </div>
+        {/* <Bg2Mid /> */}
         <PageSection
           id="index-values"
           className="w-full flex flex-col justify-center relative z-10"
         >
-          <PageWrapper className="w-full md:px-24 md:pb-14 lg:px-24 lg:pb-14 max-w-6xl mx-auto grid grid-cols-1">
+          <PageWrapper className="w-full md:px-24 md:pb-14 max-w-6xl lg:px-24 lg:pb-14 mx-auto grid grid-cols-1 lg:mt-60 md:mt-20 md:py-12">
             <>
-              <ul className="w-full h-full grid grid-cols-2 lg:grid-cols-4 relative md:pb-8 md:pt-8 px-12 md:px-0 lg:pb-8 lg:pt-8 px-12 lg:px-0">
+              <ul className="w-full h-full grid grid-cols-2 lg:grid-cols-4 relative md:pb-8 md:pt-8 px-12 md:px-0 lg:pb-8 lg:pt-8 lg:px-0 ">
                 <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center">
                   <Card.hackers />
                 </div>
                 <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center ">
                   <Card.hours />
                 </div>
-                <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center md:-mt-0 lg:-mt-0 -mt-40">
+                <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center md:-mt-0 lg:-mt-0 sm:-mt-32">
                   <Card.projects />
                 </div>
-                <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center md:-mt-0 lg:-mt-0 -mt-40">
+                <div className="relative flex flex-row md:flex-col lg:flex-col justify-center items-center md:-mt-0 lg:-mt-0 sm:-mt-32">
                   <Card.prizes />
                 </div>
               </ul>
@@ -167,7 +169,7 @@ const Home: NextPage = () => {
               </div>
               <div>
                 <ul className="relative z-20 w-full flex flex-row grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-center items-center px-0 md:px-8 pb-8">
-                  <div className="relative w-full text-center flex flex-col justify-center items-center transition duration-500 hover:scale-110 ">
+                  <div className="relative w-full text-center flex flex-col justify-center items-center transition duration-500 hover:scale-110">
                     <Bulb />
                     <h1 className="designText text-white text-3xl 2xl:text-4xl pb-2 font-semibold">
                       DESIGN
@@ -206,10 +208,13 @@ const Home: NextPage = () => {
         </PageSection>
       </div>
 
-      <PageSection id="index-sponsors" className="flex justify-center relative">
+      <PageSection
+        id="index-sponsors"
+        className="flex justify-center relative lg:mt-60 md:mt-24"
+      >
         {/* brig svg */}
         <>
-          <div className="relative sm:hidden">
+          <div className="relative sm:hidden w-full h-full">
             <Bridge />
           </div>
           <div className="relative sm:flex hidden">
@@ -232,13 +237,16 @@ const Home: NextPage = () => {
         </>
       </PageSection>
 
-      <PageSection id="index-team" className=" flex justify-center relative ">
+      <PageSection
+        id="index-team"
+        className="w-full flex justify-center relative"
+      >
         {/* brig svg */}
         <>
-          <div className="relative lg:flex hidden">
+          <div className="lg:relative md:hidden sm:hidden w-full">
             <Mountain />
           </div>
-          <div className=" relative md:flex hidden">
+          <div className="relative md:flex hidden">
             <BG4 />
           </div>
 
@@ -300,13 +308,13 @@ const Home: NextPage = () => {
 
       <PageSection
         id="index-FAQ"
-        className="min-h-screen w-full  flex justify-center relative "
+        className="min-h-screen w-full  flex justify-center relative"
       >
         <>
           <div className="md:relative lg:hidden sm:hidden">
             <MdBG5 />
           </div>
-          <div className="lg:relative md:hidden sm:hidden">
+          <div className="lg:relative md:hidden sm:hidden w-full h-full">
             <BG5 />
           </div>
           <div className="sm:flex relative hidden">
@@ -353,10 +361,10 @@ const Home: NextPage = () => {
                 </div>
               </div>
 
-              <div className="md:flex flex-row w-3/4 -translate-y-40 hidden">
+              <div className="md:flex flex-row w-3/4 -translate-y-48 ml-20 hidden">
                 <FootDesign />
               </div>
-              <div className="sm:flex flex-row w-3/4 -translate-y-[5%] translate-x-[25%] hidden">
+              <div className="sm:flex flex-row w-3/4 -translate-y-[12%] translate-x-[25%] hidden">
                 <Sm_footer />
               </div>
             </>

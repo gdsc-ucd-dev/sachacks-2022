@@ -12,7 +12,7 @@ const MLHPopUp: React.FC<MLHPopUpProps> = ({ scroll }) => {
     >
       <svg
         className={join(
-          "transition-all fixed z-50 top-0 right-20 md:right-16 transform",
+          "transition-all fixed z-50 top-0 right-20 md:right-16 sm:right-4 transform",
           scroll ? "-translate-y-full" : "translate-y-0"
         )}
         width="87"

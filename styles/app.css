@@ -2,33 +2,33 @@
 * APP FONT IMPORTS 
 * Source : Google Font APIs
 */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 * {
-    scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 html {
-        /* overflow: visible; */
+  overflow: auto;
 }
 /** Set base font to 'Poppins', sans-serif */
-html, body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url(/public/assets/Home\ Page\ Illustration.svg);
-    
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/public/assets/Home\ Page\ Illustration.svg);
 }
 
 .designText {
-    text-shadow: 0px 4px 4px rgba(251, 152, 245, 0.69);
+  text-shadow: 0px 4px 4px rgba(251, 152, 245, 0.69);
 }
 
 .cardText {
-    text-shadow: 0px 4px 4px rgba(253, 86, 241, 0.42);
+  text-shadow: 0px 4px 4px rgba(253, 86, 241, 0.42);
 }
 
 /** Set Scrollable element to have no visual scroll bar */
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-mask#mask0_1239_3184{
-    mask-type:alpha;
+mask#mask0_1239_3184 {
+  mask-type: alpha;
 }
