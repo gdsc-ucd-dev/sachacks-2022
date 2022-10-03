@@ -1,3 +1,4 @@
+
 const routes: Routes = [
   { href: "#index-hero", displayAs: "HOME" },
   { href: "#index-values", displayAs: "ABOUT" },
@@ -5,7 +6,7 @@ const routes: Routes = [
   { href: "#index-team", displayAs: "TEAM" },
   { href: "#index-FAQ", displayAs: "FAQ" },
   { href: "#index-register", displayAs: "SIGN UP" },
-  { href: "discord", displayAs: "" },
+  
   
 ];
 
