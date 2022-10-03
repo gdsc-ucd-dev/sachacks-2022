@@ -260,12 +260,12 @@ const Home: NextPage = () => {
                 <div className="ml-[0] pb-10 mb-10 md:ml-12">
                   <SectionTitle title="The Team" color="light" />
                 </div>
-                <div className="lg:block hidden">
-                  <div className="flex flex-row justify-between justify-center mr-48 mb-14 ">
+                <div className="lg:block md:block hidden">
+                  <div className="flex flex-row justify-between justify-center mr-48 mb-14 md:-ml-72">
                     <Team111 />
                   </div>
 
-                  <div className="flex flex-row justify-between justify-center mr-32 mb-14">
+                  {/* <div className="flex flex-row justify-between justify-center mr-32 mb-14">
                     <Team112 />
                   </div>
 
@@ -274,9 +274,9 @@ const Home: NextPage = () => {
                   </div>
 
                   <div className="flex flex-row justify-between justify-center mr-32 mb-14 ">
-                    <Team4 />
-                  </div>
-                  <div className="  inline">
+                    <Team4 /> */}
+                  {/* </div> */}
+                  {/* <div className="  inline">
                     <div className="pr-28 inline">
                       <Team1 />
                     </div>{" "}
@@ -287,18 +287,18 @@ const Home: NextPage = () => {
                     <div className="pl-60 -translate-y-80 mt-10">
                       <TeamDesign />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
-              <div className="md:flex flex-start hidden  ml-12">
+              {/* <div className="md:flex flex-start hidden  ml-12">
                 <Md_team />
-              </div>
+              </div> */}
 
               <div className="sm:flex flex-start hidden mr-20">
                 <Sm_team />
               </div>
-              <div className="sm:flex flex-end hidden translate-x-16 -translate-y-16">
+              <div className="sm:flex flex-end hidden translate-x-16 -translate-y-72">
                 <Sm_design />
               </div>
             </>
