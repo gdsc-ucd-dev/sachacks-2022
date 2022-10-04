@@ -221,16 +221,29 @@ const Home: NextPage = () => {
             <BG3_sm />
           </div>
 
-          <PageWrapper className="w-full pt-80 pb-28 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
+          <PageWrapper className="w-full pt-60 pb-10 ml-20 max-w-6xl mx-auto grid grid-cols-1 absolute content-center">
             <div className="absolute content-center">
-              <div className="w-full mt-40 ml-[0] pb-0">
+              <div className="w-full mt-40 ml-[0] pb-10">
                 <SectionTitle
                   title="Our Sponsors and Featured Events"
                   color="light"
                 />
               </div>
-              <div className="mt-20 sm:mt-10 animate-pulse mr-16">
-                <Airplane />
+              <div className="lg:mt-20 md:mt-20 mt-5 mr-20">
+                <ul className="relative z-20 w-full flex flex-row grid grid-cols-1 md:grid-cols-3 justify-center items-center">
+                  <div className="relative w-full flex flex-col justify-center items-center md:px-4 lg:px-4 py-4">
+                    <img
+                      src="/assets/GDSC Logo chapter lockup centered.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="relative w-full flex flex-col justify-center items-center md:px-4 lg:px-4 py-4">
+                    <img src="/assets/mlh-logo-white.png" alt="" />
+                  </div>
+                  <div className="relative w-full flex flex-col justify-center items-center md:px-4 lg:px-4 py-4">
+                    <img src="/assets/ibm-logo.png" alt="" />
+                  </div>
+                </ul>
               </div>
             </div>
           </PageWrapper>
