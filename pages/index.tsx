@@ -351,7 +351,7 @@ const Home: NextPage = () => {
               >
                 <SectionTitle title="Hackathon Countdown" color="light" />
                 <div className="text-white  mb-20">
-                  <CountDownTimer days={21} hours={0} minutes={0} seconds={0} />
+                  <CountDownTimer days={10} hours={0} minutes={0} seconds={0} />
                 </div>
                 <div className="">
                   <a
