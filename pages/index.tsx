@@ -3,12 +3,7 @@ import PageSection from "@/components/reuseable-components/PageSection";
 import PageWrapper from "@/components/reuseable-components/PageWrapper";
 import SectionTitle from "@/components/reuseable-components/SectionTitle";
 import Airplane from "@/components/events-components/Airplane";
-import Team1 from "@/components/events-components/member";
 import Team111 from "@/components/events-components/member111";
-import Team112 from "@/components/events-components/member112";
-import Team9 from "@/components/events-components/member9";
-import Team2 from "@/components/events-components/member1";
-import Team4 from "@/components/events-components/member4";
 import SEO from "@/components/reuseable-components/SEO";
 import Card from "@/components/values-components/Card";
 import FAQ from "@/components/faq-components/FAQ";
@@ -23,6 +18,7 @@ import FootDesign from "@/components/events-components/footDesign";
 import Sm_footer from "@/components/events-components/Sm_footer";
 import Md_team from "@/components/events-components/Md_team";
 import Sm_design from "@/components/events-components/Sm_design";
+import Count from "@/components/events-components/clock";
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -351,7 +347,8 @@ const Home: NextPage = () => {
               >
                 <SectionTitle title="Hackathon Countdown" color="light" />
                 <div className="text-white  mb-20">
-                  <CountDownTimer days={21} hours={0} minutes={0} seconds={0} />
+                  {/* <CountDownTimer days={21} hours={0} minutes={0} seconds={0} /> */}
+                  <Count />
                 </div>
                 <div className="">
                   <a
