@@ -68,7 +68,7 @@ const CountDownTimer = ({
   });
 
   return (
-    <div className="  lg:text-2xl md:text-lg sm:text-sm text-xs mt-10 lg:mt-20  md:mt-16 sm:mt-12 ">
+    <div className="lg:text-2xl md:text-lg sm:text-sm text-xs mt-10 lg:mt-20  md:mt-16 sm:mt-12 ">
       <p className="flex flex-row gap-[8%] md:gap-[13%] sm:gap-[5%] lg:gap-[11%] lg:ml-10 md:ml-10 sm:ml-6">
         <div className=" ">Days</div>
         <div className="">Hours </div>
