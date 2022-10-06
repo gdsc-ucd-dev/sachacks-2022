@@ -93,7 +93,7 @@ const Count: React.FC = () => {
                   Seconds
                 </span>
                 <div className="flex flex-row">
-                  <span className="text-9xl font-extrabold md:text-8xl sm:text-5xl -ml-4">
+                  <span className="text-9xl font-extrabold md:text-8xl sm:text-5xl ">
                     {seconds}
                   </span>
                   <span className="text-9xl md:text-8xl sm:text-5xl"></span>
