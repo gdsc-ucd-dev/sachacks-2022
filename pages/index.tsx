@@ -238,7 +238,7 @@ const Home: NextPage = () => {
                     <img src="/assets/mlh-logo-white.png" alt="" />
                   </div>
                   <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
-                    <img src="/assets/ibm-logo.png" alt="" />
+                    <img src="/assets/ibmR.png" alt="" />
                   </div>
                   <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
                     <img src="/assets/echo3D - Logo 2021.png" alt="" />
