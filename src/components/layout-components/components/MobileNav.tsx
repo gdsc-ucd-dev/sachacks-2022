@@ -36,7 +36,7 @@ const MobileNav: React.FC<MLHPopUpProps> = ({ scroll }) => {
             : "hidden bg--[#8E0084]/0 -translate-y-full"
         )}
       >
-        <section className="p-4 " onScroll={onClickMobileViewToggle} id="menu">
+        <section className="p-4 "  id="menu">
           <ul className="flex flex-col space-y-4 static">
             {events.map((events, index) => (
               <a
