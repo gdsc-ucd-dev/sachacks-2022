@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <Bg1></Bg1>
         <PageSection
           id="index-hero"
-          className="relative z-20 w-full lg:h-screen flex flex-col justify-center pb-10"
+          className="relative z-20 w-full lg:h-screen flex flex-col justify-center pb-10 sm:mt-8"
         >
           <>
             <PageWrapper className="w-full px-8 max-w-6xl mx-auto relative z-10 flex flex">
@@ -85,23 +85,41 @@ const Home: NextPage = () => {
                       <img src="/assets/gdsc.png" alt="" />
                     </ul>
                   </div>
-                  <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8">
+                  <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8 sm:-ml-4">
                     <a
                       href={links.preRegister}
                       target="_blank"
                       rel="noreferrer"
-                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-36 sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
-                      Register
+                      Register Now
                     </a>
                     <a
                       href={links.sponsorUs}
-                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full lg:w-40 sm:w-40 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Sponsor Us
                     </a>
+                    <a
+                      href={links.mentor}
+                      target="_blank"
+                      rel="noreferrer"
+                      className=" lg:hidden shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-44 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                    >
+                      Become a Mentor
+                    </a>
                   </ul>
+
+                  <a
+                    href={links.mentor}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" -mt-4 sm:hidden md:hidden shadow-xl bg-white text-highlight px-4 py-3 rounded-md text-center w-full lg:w-48 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm mr-20"
+                  >
+                    Become a Mentor
+                  </a>
                 </div>
+
                 <div className="w-full z-20 flex flex-col justify-center relative ">
                   <img
                     src="/assets/tower.png"
@@ -273,8 +291,8 @@ const Home: NextPage = () => {
                   <SectionTitle title="The Team" color="light" />
                 </div>
                 <div className="lg:block md:block hidden">
-                  <div className="flex flex-row justify-between justify-center mr-48 mb-14 md:-ml-72">
-                    <Team111 />
+                  <div className="flex flex-row justify-between justify-center mr-48 mb-14  md:ml-14 md:w-[800px] md:h-[1100px] lg:w-[1400px] md:-mt-8">
+                    <Md_team />
                   </div>
 
                   {/* <div className="flex flex-row justify-between justify-center mr-32 mb-14">
