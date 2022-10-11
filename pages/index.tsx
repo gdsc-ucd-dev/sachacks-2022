@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                       href={links.preRegister}
                       target="_blank"
                       rel="noreferrer"
-                      className="shadow-xl bg-white text-highlight px-4 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-white text-highlight px-2 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Register Now
                     </a>
