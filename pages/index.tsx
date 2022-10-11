@@ -28,9 +28,6 @@ import links from "@/data/links";
 /**next&react */
 import type { NextPage } from "next";
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
 /**react-icons */
 
 /**images */
@@ -90,13 +87,13 @@ const Home: NextPage = () => {
                       href={links.preRegister}
                       target="_blank"
                       rel="noreferrer"
-                      className="shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-white text-highlight px-4 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Register Now
                     </a>
                     <a
                       href={links.sponsorUs}
-                      className="shadow-xl bg-[#8E0084] text-light px-8 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl bg-[#8E0084] text-light px-4 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Sponsor Us
                     </a>
@@ -104,27 +101,27 @@ const Home: NextPage = () => {
                       href={links.mentor}
                       target="_blank"
                       rel="noreferrer"
-                      className=" lg:hidden shadow-xl bg-white text-highlight px-8 py-3 rounded-md text-center w-full lg:w-44 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
+                      className="shadow-xl z-100 bg-white text-highlight py-3 rounded-md text-center w-full lg:w-44 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Become a Mentor
                     </a>
                   </ul>
 
-                  <a
+                  {/* <a
                     href={links.mentor}
                     target="_blank"
                     rel="noreferrer"
                     className=" -mt-4 sm:hidden md:hidden shadow-xl bg-white text-highlight px-4 py-3 rounded-md text-center w-full lg:w-48 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm mr-20"
                   >
                     Become a Mentor
-                  </a>
+                  </a> */}
                 </div>
 
-                <div className="w-full z-20 flex flex-col justify-center relative ">
+                <div className="w-full z-20 flex flex-col justify-center relative pointer-events-none">
                   <img
                     src="/assets/tower.png"
                     alt=""
-                    className="lg:hidden block z-21 relative"
+                    className="lg:hidden block z-21 relative pointer-events-none"
                   ></img>
                   <Tower />
                 </div>
