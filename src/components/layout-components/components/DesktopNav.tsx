@@ -2,8 +2,7 @@
 import routes from "@/data/routes";
 import { useState, useEffect } from "react";
 // import Menu from "./Menu";
-import ReactDOM from "react-dom";
-import pkg from "semantic-ui-react/package.json";
+
 import MobileNav from "./MobileNav";
 
 const DesktopNav: React.FC = () => {
