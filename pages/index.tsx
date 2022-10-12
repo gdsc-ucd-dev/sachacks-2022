@@ -19,6 +19,7 @@ import Sm_footer from "@/components/events-components/Sm_footer";
 import Md_team from "@/components/events-components/Md_team";
 import Sm_design from "@/components/events-components/Sm_design";
 import Count from "@/components/events-components/clock";
+import SliderComponent from "@/components/events-components/slider";
 
 /**data */
 import FAQItems from "@/data/faqs";
@@ -323,7 +324,7 @@ const Home: NextPage = () => {
               </div> */}
 
               <div className="sm:flex flex-start hidden mr-20">
-                <Sm_team />
+                <SliderComponent />
               </div>
               <div className="sm:flex flex-end hidden translate-x-16 -translate-y-72">
                 <Sm_design />

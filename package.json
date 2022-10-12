@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build", 
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,8 +14,8 @@
     "react-dropdown": "^1.11.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.1",
+    "swiper": "^8.4.3",
     "trim": "^1.0.1"
-    
   },
   "devDependencies": {
     "@types/jquery": "^3.5.14",
