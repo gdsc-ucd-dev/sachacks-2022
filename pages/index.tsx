@@ -361,7 +361,7 @@ const Home: NextPage = () => {
                 id="index-register"
                 className="lg:mt-40 md:mt-36 sm:mt-32 mt-20"
               >
-                <SectionTitle title="Hackathon Countdown" color="light" />
+                <SectionTitle title="Hackathon Ends in..." color="light" />
                 <div className="text-white  mb-20">
                   {/* <CountDownTimer days={21} hours={0} minutes={0} seconds={0} /> */}
                   <Count />
