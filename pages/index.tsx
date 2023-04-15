@@ -90,7 +90,7 @@ const Home: NextPage = () => {
                       rel="noreferrer"
                       className="shadow-xl bg-white text-highlight px-2 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
-                      Check-in
+                      Click here to Stay Updated!
                     </a>
                     <a
                       href={links.sponsorUs}
@@ -98,14 +98,14 @@ const Home: NextPage = () => {
                     >
                       Sponsor Us
                     </a>
-                    {/*<a
-                      href={links.mentor}
+                    <a
+                      href={links.discord}
                       target="_blank"
                       rel="noreferrer"
                       className="shadow-xl z-100 bg-white text-highlight py-3 rounded-md text-center w-full lg:w-44 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
-                      Become a Mentor
-                    </a>*/}
+                      Discord
+                    </a>
                   </ul>
 
                   {/* <a
