@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                     {AppTexts.KEYWORDS.join(". ")}
                   </h3>
                   <p className="text-base lg:text-lg 2xl:text-xl font-light pt-3">
-                    Join Us Virtually On October 15-16, 2022
+                    More information coming soon!
                   </p>
                   <div className="pt-10 pb-10">
                     <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8">
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                   </div>
                   <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8 sm:-ml-4">
                     <a
-                      href={links.preRegister}
+                      href={links.interestForm}
                       target="_blank"
                       rel="noreferrer"
                       className="shadow-xl bg-white text-highlight px-2 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
@@ -98,14 +98,14 @@ const Home: NextPage = () => {
                     >
                       Sponsor Us
                     </a>
-                    <a
+                    {/*<a
                       href={links.mentor}
                       target="_blank"
                       rel="noreferrer"
                       className="shadow-xl z-100 bg-white text-highlight py-3 rounded-md text-center w-full lg:w-44 sm:w-32 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
                       Become a Mentor
-                    </a>
+                    </a>*/}
                   </ul>
 
                   {/* <a
@@ -368,7 +368,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="">
                   <a
-                    href={links.preRegister}
+                    href={links.interestForm}
                     target="_blank"
                     rel="noreferrer"
                     className="shadow-xl bg-[#8E0084] text-white px-8 py-3 rounded-half text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"

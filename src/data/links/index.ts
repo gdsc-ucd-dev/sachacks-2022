@@ -1,7 +1,7 @@
 const links = {
   sponsorUs: "mailto:contact@sachacks.io",
-  preRegister:
-    "https://forms.gle/UFoMGzfUVSsgu65a8",
+  interestForm:
+    "https://forms.gle/2gH4wzYwetV9v1Er5",
   mentor:
   "https://forms.gle/eZLLd1xKB6pPt6Ye6"
 };
