@@ -117,12 +117,12 @@ const Footer: React.FC = () => {
               Made with &nbsp; <FaHeart /> &nbsp; by SacHacks 2022
             </div> */}
             <div className=" lg:mt-[22%] flex flex-row ">
-              Made with &nbsp; <FaHeart /> &nbsp; by SacHacks 2022
+              Made with &nbsp; <FaHeart /> &nbsp; by SacHacks
             </div>
           </div>
         </section>
         <div className=" sm:flex md:flex flex-row text-xs hidden text-light ml-28 md:ml-[38%] sm:ml-[30%]">
-          Made with &nbsp; <FaHeart /> &nbsp; by SacHacks 2022
+          Made with &nbsp; <FaHeart /> &nbsp; by SacHacks
         </div>
       </footer>
     </React.Fragment>

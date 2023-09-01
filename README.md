@@ -12,7 +12,17 @@
         <a href="https://github.com/haneulab">Haneul Choi</a>
     </li>
         <li>
-        <a href="#">Mukta</a>
+        <a href="https://www.linkedin.com/in/mukta-jaiswal/">Mukta Jaiswal</a>
+    </li>
+</ul>
+
+### Further Development By
+<ul>
+    <li>
+        <a href="https://www.linkedin.com/in/adityaaravi6">Adityaa Ravi</a>
+    </li>
+        <li>
+        <a href="https://www.linkedin.com/in/anirudhvee/">Anirudh Venkatachalam</a>
     </li>
 </ul>
 
