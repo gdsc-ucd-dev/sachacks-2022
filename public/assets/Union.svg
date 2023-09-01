@@ -3,14 +3,14 @@
 <path fillRule="evenodd" clipRule="evenodd" d="M231 40.719H40.6555V190.081L135.757 241L230.859 190.081L231 190.081V40.719Z" fill="url(#paint0_linear_814_6467)"/>
 </g>
 <defs>
-<filter id="filter0_f_814_6467" x="0.655518" y="0.718994" width="270.344" height="280.281" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_f_814_6467" x="0.655518" y="0.718994" width="270.344" height="280.281" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_814_6467"/>
 </filter>
 <linearGradient id="paint0_linear_814_6467" x1="135.828" y1="40.719" x2="135.828" y2="241" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FB98F5" stop-opacity="0.58"/>
-<stop offset="1" stop-color="#C4C4C4" stop-opacity="0.09"/>
+<stop stopColor="#FB98F5" stopOpacity="0.58"/>
+<stop offset="1" stopColor="#C4C4C4" stopOpacity="0.09"/>
 </linearGradient>
 </defs>
 </svg>

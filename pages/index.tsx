@@ -56,7 +56,8 @@ const Home: NextPage = () => {
       <SEO />
 
       {/* PAGE UI */}
-      <div className="relative text-white">
+      <div suppressHydrationWarning={true}>
+      <div className="relative text-white" >
         <Bg1></Bg1>
         <PageSection
           id="index-hero"
@@ -402,6 +403,7 @@ const Home: NextPage = () => {
           </PageWrapper>
         </>
       </PageSection>
+      </div>
     </React.Fragment>
   );
 };
