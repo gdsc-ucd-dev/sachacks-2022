@@ -74,23 +74,24 @@ const Home: NextPage = () => {
                     {AppTexts.KEYWORDS.join(". ")}
                   </h3>
                   <p className="text-base lg:text-lg 2xl:text-xl font-light pt-3">
-                    More information coming soon!
+                    Early November 2023 <br/>
+                    Online & In-Person in Davis, California.
                   </p>
                   <div className="pt-10 pb-10">
                     <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8">
                       <p className="lg:text-lg">Powered by</p>
                       <img src="/assets/IBMLogo.png" alt="" />
-                      <img src="/assets/gdsc.png" alt="" />
+                      {/* <img src="/assets/gdsc.png" alt="" /> */}
                     </ul>
                   </div>
                   <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8 sm:-ml-4">
                     <a
-                      href={links.interestForm}
+                      href={links.linktree}
                       target="_blank"
                       rel="noreferrer"
                       className="shadow-xl bg-white text-highlight px-2 py-3 rounded-md text-center w-full lg:w-48 sm:w-28 text-xs font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                     >
-                      Click here to Stay Updated!
+                      Apply Now
                     </a>
                     <a
                       href={links.sponsorUs}
@@ -246,18 +247,18 @@ const Home: NextPage = () => {
                       alt=""
                     />
                   </div>
-                  <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
+                  {/* <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
                     <img src="/assets/mlh-logo-white.png" alt="" />
-                  </div>
+                  </div> */}
                   <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
                     <img src="/assets/ibmR.png" alt="" />
                   </div>
-                  <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
+                  {/* <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 py-4">
                     <img src="/assets/echo3D - Logo 2021.png" alt="" />
-                  </div>
-                  <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 mb-2">
+                  </div> */}
+                  {/* <div className="relative w-full flex flex-col justify-center items-center sm:px-4 md:px-4 lg:px-4 mb-2">
                     <img src="/assets/4.png" alt="" />
-                  </div>
+                  </div> */}
                 </ul>
               </div>
             </div>
@@ -361,19 +362,20 @@ const Home: NextPage = () => {
                 id="index-register"
                 className="lg:mt-40 md:mt-36 sm:mt-32 mt-20"
               >
-                <SectionTitle title="Hackathon Ends in..." color="light" />
+                {/* <SectionTitle title="Hackathon Ends in..." color="light" />
                 <div className="text-white  mb-20">
-                  {/* <CountDownTimer days={21} hours={0} minutes={0} seconds={0} /> */}
+                  <CountDownTimer days={21} hours={0} minutes={0} seconds={0} />
                   <Count />
-                </div>
+                </div> 
+                */}
                 <div className="">
                   <a
-                    href={links.interestForm}
+                    href={links.linktree}
                     target="_blank"
                     rel="noreferrer"
                     className="shadow-xl bg-[#8E0084] text-white px-8 py-3 rounded-half text-center w-full sm:w-56 text-sm font-semibold lg:text-base transition-all lg:hover:opacity-75 lg:hover:shadow-sm"
                   >
-                    Sign Up
+                    Apply Now
                   </a>
                 </div>
               </div>
