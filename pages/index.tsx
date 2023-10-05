@@ -75,14 +75,14 @@ const Home: NextPage = () => {
                     {AppTexts.KEYWORDS.join(". ")}
                   </h3>
                   <p className="text-base lg:text-lg 2xl:text-xl font-light pt-3">
-                    Early November 2023 <br/>
-                    Online & In-Person in Davis, California.
+                    November 4-5, 2023 <br/>
+                    Fully Virtual
                   </p>
                   <div className="pt-10 pb-10">
                     <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8">
                       <p className="lg:text-lg">Powered by</p>
                       <img src="/assets/IBMLogo.png" alt="" />
-                      {/* <img src="/assets/gdsc.png" alt="" /> */}
+                      <img src="/assets/gdsc.png" alt="" />
                     </ul>
                   </div>
                   <ul className="flex items-center justify-start space-x-2 md:space-x-4 lg:space-x-4 mb-8 sm:-ml-4">
@@ -267,11 +267,11 @@ const Home: NextPage = () => {
         </>
       </PageSection>
 
-      <PageSection
+      {/*<PageSection
         id="index-team"
         className="w-full flex justify-center relative"
       >
-        {/* brig svg */}
+        {/* brig svg
         <>
           <div className="lg:relative md:hidden sm:hidden w-full">
             <Mountain />
@@ -304,9 +304,9 @@ const Home: NextPage = () => {
                   </div>
 
                   <div className="flex flex-row justify-between justify-center mr-32 mb-14 ">
-                    <Team4 /> */}
-                  {/* </div> */}
-                  {/* <div className="  inline">
+                    <Team4 />
+                  {/* </div>
+                  <div className="  inline">
                     <div className="pr-28 inline">
                       <Team1 />
                     </div>{" "}
@@ -317,13 +317,13 @@ const Home: NextPage = () => {
                     <div className="pl-60 -translate-y-80 mt-10">
                       <TeamDesign />
                     </div>
-                  </div> */}
+                  </div> 
                 </div>
               </div>
 
-              {/* <div className="md:flex flex-start hidden  ml-12">
+              <div className="md:flex flex-start hidden  ml-12">
                 <Md_team />
-              </div> */}
+              </div>
 
               <div className="sm:flex flex-start hidden mr-20">
                 <SliderComponent />
@@ -334,7 +334,7 @@ const Home: NextPage = () => {
             </>
           </PageWrapper>
         </>
-      </PageSection>
+      </PageSection> */}
 
       <PageSection
         id="index-FAQ"

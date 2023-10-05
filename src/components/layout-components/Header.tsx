@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   }, []);
   return (
     <React.Fragment>
-      <MLHPopUp scroll={scroll} />
+      {/* <MLHPopUp scroll={scroll} /> */}
       <header className="w-full sticky top-0 z-40 bg-transparent">
         <section className="p-4 pt-8 lg:px-8 max-w-7xl mx-auto flex justify-between lg:justify-start lg:space-x-8 items-center">
           <HeadTitle mountedIn="header" />

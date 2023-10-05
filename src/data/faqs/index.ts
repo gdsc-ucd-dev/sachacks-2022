@@ -6,7 +6,7 @@ const FAQItems: FAQs = [
   },
   {
     Q: "When will the event take place?",
-    A: "Hacking will start on the morning of Oct 15 and continue for 24 hours, and judging is expected to complete on the evening of Oct 16.",
+    A: "Hacking will start on the morning of Nov 4 and continue for 24 hours, and judging is expected to complete on the evening of Nov 5.",
     links: null,
   },
   {
@@ -33,8 +33,8 @@ const FAQItems: FAQs = [
   },
   {
     Q: "When is the application deadline?",
-    A: "Registration is open right now and will close on October 9th, 2022. Apply soon by clicking on the link below!",
-    links: ["https://docs.google.com/forms/d/1Y5GoMXa39tvC6whL8ZJSVHV2h5WvZ_BuIU4QM5F5858/viewform?chromeless=1&edit_requested=true&pli=1"],
+    A: "Registration is open right now and will close on October 25th, 2023. Apply soon by clicking on the link below!",
+    links: ["https://forms.gle/o7fD1HSq2hnEjKCM6"],
   },
   {
     Q: "Code of Conduct?",
